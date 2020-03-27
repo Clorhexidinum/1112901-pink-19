@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+	<link rel="StyleSheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<title>Конкурс PINK</title>
+  </head>
+  <body>
+    <header class="page-header">
+	  <nav class="page-header__nav nav">
+	  	  <a class="nav__logo">
+	    <img class="nav__logo-image" src="" alt="Турагенство PINK" width="" height="">
+	  </a>
+	    <button class="main-nav__toggle" type="button">Меню</button>
+		<ul class="main-nav__list site-list">
+		  <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+		  <li class="site-list__item"><a href="photo.html" class="site-list__link">Фотографии</a></li>
+		  <li class="site-list__item"><a href="form.html" class="site-list__link">Конкурс</a></li>
+		  <li class="site-list__item"><a href="#" class="site-list__link">HTML Академия</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<main class="page-main">
+	  <h1 class="visually-hidden">Турагенство PINK</h1>
+	  <h2 class="page-main__competition">Конкурс на самое безбашенное путешествие с Пинк</h2>
+	  <p class="page-main__competition-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+	  <form class="competition-form">
+	    <fieldset class="competition-form__name name">
+	      <label for="last-name" class="competition-form__legend name__legend">Фамилия:</label>
+	      <input type="name" id="last-name" class="name-form" placeholder="Укажите фамилию*" required>
+		    <label for="first-name" class="competition-form__legend name__legend">Имя:</label>
+	      <input type="name" id="first-name" class="name-form" placeholder="Укажите имя*" required>
+		    <label for="patronymic" class="competition-form__legend name__legend">Отчество:</label>
+	      <input type="name" id="patronymic" class="name-form" placeholder="Укажите отчество*" required>
+		</fieldset>
+		<fieldset class="competition-form__app competition-app">
+		  <legend class="competition-form__legend competition-app_legend">С каким приложением путешествовали?</legend>
+		  <label for="ios">
+		    <input type="radio" name="app" id="ios" value="ios" class="competition-app__radio" checked>Pink для IOS
+		  </label>
+		  <label for="android">
+		    <input type="radio" name="app" id="android" value="android" class="competition-app__radio">Pink на Android
+		  </label>
+		  <label for="windows-phone">
+		    <input type="radio" name="app" id="windows-phone" value="windows-phone" class="competition-app__radio">Windows Phone
+		  </label>
+		</fieldset>
+		<fieldset class="competition-form__contact contact">
+		  <legend class="competition-form__legend contact-legend">Контактная информация</legend>
+		  <input type="tel" id="phone" class="contact__form" placeholder="Номер, пожалуйта" required>
+		  <label for="phone" class="competition-form__legend contact-legend">Номер телефона</label>
+	      <input type="email" id="email" class="contact__form" placeholder="Ведите почту*" required>
+		  <label for="email" class="competition-form__legend contact-legend">Адрес почты</label>
+		</fieldset>
+		<fieldset class="competition-form__аchievements аchievements">
+		  <legend class="competition-form__legend аchievements_legend">Ваши безбашенные достижения в путешествии</legend>
+		  <label for="shark">
+		    <input type="checkbox" name="Achievements" id="shark" value="shark" class="аchievements__checkbox" checked>Сделал селфи с акулой
+		  </label>
+		  <label for="beach">
+		    <input type="checkbox" name="Achievements" id="beach" value="beach" class="аchievements__checkbox" checked>Обгорел на пляже
+		  </label>
+		  <label for="Chuck">
+		    <input type="checkbox" name="Achievements" id="Chuck" value="Chuck" class="аchievements__checkbox">Видел Чака Норриса
+		  </label>
+		  <label for="souvenir">
+		    <input type="checkbox" name="Achievements" id="souvenir" value="souvenir" class="аchievements__checkbox" >Накупил сувениров
+		  </label>
+		  <label for="tover">
+		    <input type="checkbox" name="Achievements" id="tover" value="tover" class="аchievements__checkbox" checked>Удержал башню
+		  </label>
+		  <label for="hotel">
+		    <input type="checkbox" name="Achievements" id="hotel" value="hotel" class="аchievements__checkbox">Разгромил отель
+		  </label>
+		</fieldset>
+		<fieldset class="competition-form__emotions">
+		  <legend class="competition-form__legend">Опишите свои эмоции</legend>
+		  <input type="text" id="text" class="competition-form__message" placeholder="Можно прям в красках, не стесняясь в выражениях">
+		</fieldset>
+		<input type="submit" class="competition-form__button" value="Отправить форму">
+		<p class="1"><span class="red-*">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+	  </form>
+	</main>
+	<footer class="page-footer">
+	  <a class="page-footer__logo">
+	    <img class="page-footer__logo-image" src="" alt="Турагенство PINK" width="" height="">
+	  </a>
+	  <div class="page-footer__social social">
+	    <ul class="social-list">
+		  <li class="social-item"><a class="social-link social-link--twitter" href="#">Twitter</a></li>
+		  <li class="social-item"><a class="social-link social-link--facebook" href="#">Facebook</a></li>
+		  <li class="social-item"><a class="social-link social-link--youtube" href="#">Youtube</a></li>
+		</ul>
+	  </div>
+	  <p class="1">Разработано <a class="html" href="#">HTML Academy</a></p>
+	</footer>
+	<div class="popup popup__error">
+	  <h3 class="popup__header">Что-то пошло не так!</h3>
+      <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+	  <input type="button" class="popup__button" value="OK">
+    </div>
+	<div class="popup popup__success">
+	  <h3 class="popup__header">Ваша заявка отправлена</h3>
+      <p class="popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+	  <input type="button" class="popup__button" value="Закрыть окно">
+    </div>
+  </body>
+</html>
