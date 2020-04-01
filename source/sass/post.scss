@@ -1,0 +1,54 @@
+.post {
+  margin: 20px;
+  background-color: $grey;
+  position: relative;
+}
+
+.post__container {
+  margin: 0;
+}
+
+.post__decription {
+  display: none;
+}
+
+.post__item {
+  color: $blue;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 25px 20px;
+}
+
+.post__author-name {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.post__time {
+  font-weight: 400;
+}
+
+.post__text {
+  font-weight: 500;
+  margin: 0;
+}
+
+.post__likes {
+  color: $pink;
+  margin: 25px 50px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.post__likes::before {
+  position: absolute;
+  left: 22px;
+  bottom: 29px;
+  content: " ";
+  height: 13px;
+  width: 14px;
+  background-image: url(../img/icon-heart.svg);
+  background-size: cover;
+  fill: $pink;
+  cursor: pointer;
+}

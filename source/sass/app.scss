@@ -1,0 +1,77 @@
+.app{
+  background-color: #1d2631;
+  color: $white;
+  font-weight: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.app__button {
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 40px;
+  border: 2px solid $white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.app__button:hover,
+.app__button:focus {
+  color: $pink;
+  background-color: $white;
+}
+
+.app__button:active {
+  color: $pink;
+  opacity: 0.3;
+}
+
+
+.app__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 ;
+  margin-top: 30px;
+}
+
+.app__item-link{
+  display: block;
+  visibility: none;
+}
+
+.app__item-link:hover{
+  transform: scale(1.2);
+}
+
+.app__item-link--ios{
+  background-image: url(../img/logo-apple.svg);
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
+}
+
+.app__item-link--android {
+  background-image: url(../img/logo-android.svg);
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+}
+
+.app__item-link--windows{
+  background-image: url(../img/logo-microsoft.svg);
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
+}
+
+.app__description {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}

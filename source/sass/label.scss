@@ -1,0 +1,15 @@
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-color: $pink;
+  color: $white;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  margin: 0;
+}
