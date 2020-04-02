@@ -7,6 +7,7 @@
 .footer__logo {
   text-align: center;
   cursor: pointer;
+
 }
 
 .footer__social {
@@ -23,13 +24,13 @@
 
 .footer__made-in-logo {
   fill: $pink;
-}
 
-.footer__made-in-logo:hover,
-.footer__made-in-logo:active {
-  fill: $blue;
-}
+  &:hover,
+  &:active {
+    fill: $blue;
+  }
 
-.footer__made-in-logo:active {
-  opacity: 0.5;
+  &:active {
+    opacity: 0.5;
+  }
 }

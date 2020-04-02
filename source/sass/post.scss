@@ -38,17 +38,17 @@
   margin: 25px 50px;
   padding-bottom: 25px;
   text-transform: uppercase;
-}
 
-.post__likes::before {
-  position: absolute;
-  left: 22px;
-  bottom: 29px;
-  content: " ";
-  height: 13px;
-  width: 14px;
-  background-image: url(../img/icon-heart.svg);
-  background-size: cover;
-  fill: $pink;
-  cursor: pointer;
+  &::before {
+    position: absolute;
+    left: 22px;
+    bottom: 29px;
+    content: " ";
+    height: 13px;
+    width: 14px;
+    background-image: url(../img/icon-heart.svg);
+    background-size: cover;
+    fill: $pink;
+    cursor: pointer;
+  }
 }

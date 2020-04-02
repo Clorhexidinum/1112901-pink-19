@@ -14,26 +14,32 @@
   padding: 20px;
 }
 
-.nav__logo-img,
+.nav__logo-img {
+  fill: $white;
+  cursor: pointer;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
 .nav__toggle-img {
   fill: $white;
   cursor: pointer;
-}
 
-.nav__logo-img:hover,
-.nav__toggle-img:hover {
-  fill: $pink;
-}
+  &:hover {
+    fill: $pink;
+  }
 
-.nav__logo-img:active {
-  fill: $white;
-  opacity: 0.3;
-}
-
-
-.nav__toggle-img:active{
-  fill: $pink;
-  opacity: 0.5;
+  &:active {
+    fill: $pink;
+    opacity: 0.5;
+  }
 }
 
 .nav__list {
@@ -58,14 +64,14 @@
   color: $white;
   align-items: center;
   text-transform: uppercase;
-}
 
-.nav__item-link:hover,
-.nav__item-link:focus {
-  color: $pink;
-}
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
 
-.nav__item-link:active {
-  color: $pink;
-  opacity: 0.5;
+  &:active {
+    color: $pink;
+    opacity: 0.5;
+  }
 }

@@ -17,19 +17,18 @@
   border: 2px solid $white;
   border-radius: 30px;
   cursor: pointer;
-}
 
-.app__button:hover,
-.app__button:focus {
-  color: $pink;
-  background-color: $white;
-}
+  &:hover,
+  &:focus {
+    color: $pink;
+    background-color: $white;
+  }
 
-.app__button:active {
-  color: $pink;
-  opacity: 0.3;
+  &:active {
+    color: $pink;
+    opacity: 0.3;
+  }
 }
-
 
 .app__list {
   list-style: none;
@@ -43,31 +42,31 @@
 .app__item-link{
   display: block;
   visibility: none;
-}
 
-.app__item-link:hover{
-  transform: scale(1.2);
-}
+  &:hover{
+    transform: scale(1.2);
+  }
 
-.app__item-link--ios{
-  background-image: url(../img/logo-apple.svg);
-  background-repeat: no-repeat;
-  width: 47px;
-  height: 56px;
-}
+  &--ios{
+    background-image: url(../img/logo-apple.svg);
+    background-repeat: no-repeat;
+    width: 47px;
+    height: 56px;
+  }
 
-.app__item-link--android {
-  background-image: url(../img/logo-android.svg);
-  background-repeat: no-repeat;
-  width: 43px;
-  height: 47px;
-}
+  &--android {
+    background-image: url(../img/logo-android.svg);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 47px;
+  }
 
-.app__item-link--windows{
-  background-image: url(../img/logo-microsoft.svg);
-  background-repeat: no-repeat;
-  width: 44px;
-  height: 41px;
+  &--windows{
+    background-image: url(../img/logo-microsoft.svg);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 41px;
+  }
 }
 
 .app__description {
