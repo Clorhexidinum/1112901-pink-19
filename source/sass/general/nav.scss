@@ -15,7 +15,6 @@
 .nav__menu-prewiew {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 20px;
 }
 
@@ -49,16 +48,15 @@
 
 .nav__list {
   list-style: none;
-  display: non;
+  display: none;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .nav__item {
-  margin: 24px auto;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid $dk_grey;
+  border-bottom: 1px solid $black;
   text-align: center;
   padding: 24px;
 }

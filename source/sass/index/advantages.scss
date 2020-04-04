@@ -1,6 +1,10 @@
 .advantages {
   text-align: center;
   background-color: $grey;
+
+  &::after {
+    background-image: url("img/iphone-screen-mobile@1x.png");
+  }
 }
 
 .advantages__container {
