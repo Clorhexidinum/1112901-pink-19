@@ -3,8 +3,13 @@
   flex-wrap: wrap;
   background-color: $blue;
   color: $white;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $biger_txt;
+  line-height: $big_lh;
+  font-weight: $bold;
+}
+
+.nav__wrapper {
+  width: 100%;
 }
 
 .nav__menu-prewiew {
@@ -54,9 +59,8 @@
   margin: 24px auto;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
-  text-align:center;
+  text-align: center;
   padding: 24px;
-  margin: 0;
 }
 
 .nav__item-link {
@@ -64,6 +68,7 @@
   color: $white;
   align-items: center;
   text-transform: uppercase;
+  outline: 0;
 
   &:hover,
   &:focus {

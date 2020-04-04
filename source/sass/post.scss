@@ -14,41 +14,43 @@
 
 .post__item {
   color: $blue;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: $med_txt;
+  line-height: $med_lh;
   margin: 25px 20px;
 }
 
 .post__author-name {
-  font-weight: bold;
+  font-weight: $bold;
   margin-bottom: 15px;
 }
 
 .post__time {
-  font-weight: 400;
+  font-weight: $light;
 }
 
 .post__text {
-  font-weight: 500;
+  font-weight: $regular;
   margin: 0;
 }
 
-.post__likes {
+.post__likes-label {
   color: $pink;
   margin: 25px 50px;
   padding-bottom: 25px;
   text-transform: uppercase;
+}
 
-  &::before {
-    position: absolute;
-    left: 22px;
-    bottom: 29px;
-    content: " ";
-    height: 13px;
-    width: 14px;
-    background-image: url(../img/icon-heart.svg);
-    background-size: cover;
-    fill: $pink;
-    cursor: pointer;
-  }
+.post__likes-checkbox {
+  position: absolute;
+  left: 1em;
+  width: 1em;
+  height: 1em;
+  background-image: url("../img/icon-heart-off.svg");
+  background-size: cover;
+  fill: $pink;
+  cursor: pointer;
+}
+
+.post__likes-input:checked + .post__likes-checkbox {
+  background-image: url("../img/icon-heart-off.svg");
 }

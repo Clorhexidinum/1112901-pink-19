@@ -7,7 +7,6 @@
 .footer__logo {
   text-align: center;
   cursor: pointer;
-
 }
 
 .footer__social {
@@ -16,9 +15,9 @@
 }
 
 .footer__made-in {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  font-size: $med_txt;
+  line-height: $small_lh;
+  font-weight: $light;
   color: $blue;
 }
 

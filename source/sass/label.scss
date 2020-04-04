@@ -3,12 +3,12 @@
   vertical-align: middle;
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   background-color: $pink;
   color: $white;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: bold;
+  font-size: $small_txt;
+  line-height: $med_lh;
+  font-weight: $bold;
   text-transform: uppercase;
   padding: 13px 20px;
   margin: 0;

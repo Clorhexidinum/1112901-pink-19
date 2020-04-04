@@ -1,22 +1,23 @@
-.app{
+.app {
   background-color: #1d2631;
   color: $white;
-  font-weight: 14px;
-  line-height: 24px;
+  font-size: $med_txt;
+  line-height: $med_lh;
   text-align: center;
   padding: 28px 20px;
 }
 
 .app__button {
   color: $white;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
+  font-size: $biger_txt;
+  line-height: $small_lh;
+  font-weight: $bold;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px 40px;
   border: 2px solid $white;
   border-radius: 30px;
   cursor: pointer;
+  outline: 0;
 
   &:hover,
   &:focus {
@@ -35,34 +36,36 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  padding: 0 ;
+  padding: 0;
   margin-top: 30px;
 }
 
-.app__item-link{
+.app__item-link {
   display: block;
   visibility: none;
+  outline: 0;
 
-  &:hover{
+  &:hover,
+  &:focus {
     transform: scale(1.2);
   }
 
-  &--ios{
-    background-image: url(../img/logo-apple.svg);
+  &--ios {
+    background-image: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
     width: 47px;
     height: 56px;
   }
 
   &--android {
-    background-image: url(../img/logo-android.svg);
+    background-image: url("../img/logo-android.svg");
     background-repeat: no-repeat;
     width: 43px;
     height: 47px;
   }
 
-  &--windows{
-    background-image: url(../img/logo-microsoft.svg);
+  &--windows {
+    background-image: url("../img/logo-microsoft.svg");
     background-repeat: no-repeat;
     width: 44px;
     height: 41px;
@@ -71,6 +74,7 @@
 
 .app__description {
   margin-top: 30px;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: $med_txt;
+  line-height: $med_lh;
+  font-weight: $light;
 }
