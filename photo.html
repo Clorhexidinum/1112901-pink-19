@@ -119,6 +119,30 @@
           <p class="gallery__baner-header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
+      <section class="post">
+        <img class="post__img" src="" alt="" width="" height="">
+        <form class="post__filter">
+          <ul class="post__list">
+            <li class="post__item">
+              <label class="visually-hiden" for="clipping">Обрезка</label>
+              <button class="post__button post__button--size" type="button">1</button>
+              <input type="range" class="post__slider" id="clipping">
+            </li>
+            <li class="post__item">
+              <label class="visually-hiden" for="fill">Заливка</label>
+              <button class="post__button post__button--color" type="button">2</button>
+              <input type="range" class="post__slider" id="fill">
+            </li>
+            <li class="post__item">
+              <label class="visually-hiden" for="contrast">Контрастность</label>
+              <button class="post__button post__button--light" type="button">3</button>
+              <input type="range" class="post__slider" id="contrast">
+            </li>
+            <button type="submit" class="post__submit">Запостить</button>
+            <button type="reset" class="post__reset">Отммена</button>
+          </ul>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <a class="footer__logo">
