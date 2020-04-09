@@ -1,0 +1,40 @@
+.full-name {
+  border: 0;
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 10px 20px 3px;
+  box-sizing: border-box;
+}
+
+.full-name__label {
+  color: $pink;
+  font-weight: $regular;
+  font-size: $med_txt;
+  line-height: $biger_lh;
+  text-transform: uppercase;
+  margin-left: 23px;
+  margin-bottom: 4px;
+}
+
+.full-name__field {
+  color: $blue;
+  font-weight: $regular;
+  font-size: $biger_txt;
+  line-height: $biger_lh;
+  padding: 15px 20px;
+  border: 2px solid $grey;
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+  margin-bottom: 19px;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}

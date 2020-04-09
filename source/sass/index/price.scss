@@ -1,0 +1,66 @@
+.price {
+  padding-top: 115px;
+  background-color: $grey;
+  clip-path: polygon(0 17%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.price__list {
+  border-collapse: collapse;
+  margin: 0 20px;
+}
+
+.price__list-head {
+  background-color: $blue;
+}
+
+.price__value {
+  color: $white;
+  font-size: $biger_txt;
+  line-height: $biger_lh;
+  font-weight: $bold;
+
+  &--price {
+    font-size: $big_txt;
+    font-weight: $light;
+    line-height: $biger_lh;
+  }
+}
+
+.price__list-body {
+  border-collapse: collapse;
+  position: relative;
+}
+
+.price__field {
+  position: relative;
+  box-sizing: border-box;
+  font-size: $med_txt;
+  font-weight: $regular;
+  line-height: $biger_lh;
+  border: 2px solid $dk_grey;
+  text-transform: uppercase;
+  padding: 15px 22px;
+  min-width: 278px;
+  padding-right: 125px;
+}
+
+.price__option {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+
+  &--yes {
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 17px;
+  }
+
+  &--no {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    margin: 14px;
+  }
+}

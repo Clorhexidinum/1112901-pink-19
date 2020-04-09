@@ -1,0 +1,44 @@
+.contacts {
+  color: $blue;
+}
+
+.contacts__wrapper {
+  padding: 25px;
+}
+
+.contacts__header {
+  font-size: $big_txt;
+  font-weight: $light;
+  text-align: center;
+  line-height: $biger_lh;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.contacts__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.contacts__item-header {
+  font-size: $biger_txt;
+  font-weight: $bold;
+  margin-bottom: 0;
+}
+
+.contacts__info {
+  text-decoration: none;
+  color: $pink;
+  font-size: $big_txt;
+  font-weight: $light;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

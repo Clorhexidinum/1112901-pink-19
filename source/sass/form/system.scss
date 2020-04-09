@@ -1,0 +1,63 @@
+.system {
+  border: 0;
+  background-color: $grey;
+  display: flex;
+}
+
+.system__header {
+  font-size: $biger_txt;
+  line-height: $biger_lh;
+  font-weight: $regular;
+  color: $pink;
+}
+
+.system__label {
+  color: $blue;
+  font-size: $biger_txt;
+  line-height: $small_lh;
+  font-weight: $regular;
+  position: relative;
+  margin: 25px 0;
+  padding-left: 2em;
+  cursor: pointer;
+
+  &:hover .system__radio {
+    border-color: $blue;
+  }
+
+  &:active .system__radio {
+    border-color: $pink;
+  }
+}
+
+.system__radio {
+  content: "";
+  position: absolute;
+  left: 0.3em;
+  top: -3px;
+  width: 1.3em;
+  height: 1.3em;
+  border: 2px solid $l_grey;
+  border-radius: 50%;
+}
+
+.system__input {
+  &:checked + .system__radio {
+    background-image: url("../img/icon-map-marker.svg");
+    background-size: cover;
+    position: absolute;
+    left: 0.3em;
+    top: -3px;
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  &:focus + .system__radio,
+  &:hover + .system__radio {
+    border-color: $blue;
+  }
+
+  &:active + .system__radio {
+    border-color: $pink;
+  }
+}

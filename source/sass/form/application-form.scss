@@ -1,0 +1,14 @@
+.application-form {
+  width: 100%;
+}
+
+.application-form__warning {
+  color: $blue;
+  font-weight: $regular;
+  font-size: $med_txt;
+  line-height: $biger_lh;
+}
+
+.application-form__warning--star {
+  color: $pink;
+}

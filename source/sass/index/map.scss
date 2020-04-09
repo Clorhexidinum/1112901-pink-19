@@ -1,0 +1,21 @@
+.map__img {
+  position: relative;
+  height: 200px;
+  background-color: $grey;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    text-align: center;
+    margin: 0 auto;
+    content: "";
+    background-image: url("../img/icon-map-marker.svg");
+    width: 35px;
+    height: 35px;
+  }
+}

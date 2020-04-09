@@ -1,0 +1,38 @@
+.feedback {
+  list-style: none;
+}
+
+.feedback__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.feedback__container {
+  padding: 25px 20px;
+  margin-bottom: 5px;
+}
+
+.feedback__content {
+  margin: 0;
+}
+
+.feedback__item {
+  text-align: center;
+}
+
+.feedback__author-name {
+  color: $black;
+  font-size: $biger_txt;
+  font-weight: $bold;
+  line-height: $biger_lh;
+  margin-bottom: 13px;
+}
+
+.feedback__text {
+  margin: 0;
+  color: $blue;
+  font-size: $med_txt;
+  font-weight: $light;
+  line-height: $biger_lh;
+}

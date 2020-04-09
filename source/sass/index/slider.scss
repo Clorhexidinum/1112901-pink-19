@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-items__btn {
+  background-color: $grey;
+  border: 2px solid $transparent;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 0;
+
+  &:hover,
+  &:focus {
+    background-color: $dk_grey;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

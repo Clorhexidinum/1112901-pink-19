@@ -1,0 +1,18 @@
+.popup {
+  width: 100%;
+  text-align: center;
+}
+
+.popup__header {
+  font-size: $biger_txt;
+  line-height: $med_lh;
+  font-weight: $bold;
+  color: $black;
+}
+
+.popup__message {
+  font-size: $med_txt;
+  line-height: $med_lh;
+  font-weight: $regular;
+  color: $blue;
+}

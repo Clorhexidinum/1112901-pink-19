@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Турагенство PINK</title>
   </head>
-  <body>
+  <tr>
     <header class="page-header">
       <nav class="page-header__nav nav">
         <div class="nav__wrapper">
-          <div class="nav__menu-prewiew">
+          <div class="nav__menu">
             <a class="nav__logo">
               <svg viewBox="0 0 74.426 22.859" class="nav__logo-img" width="75" height="22">
                 <g>
@@ -23,28 +23,49 @@
                 </g>
               </svg>
             </a>
-            <a class="nav__toggle" href="#">
-              <svg class="nav__toggle-img" width="49" height="24">
-                <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-              </svg>
-            </a>
+            <div class="nav__container">
+              <button class="nav__toggle nav__toggle--closed" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
           </div>
-          <ul class="nav__list">
+          <ul class="nav__list nav__list--nojs">
             <li class="nav__item"><a href="index.html" class="nav__item-link">Главная</a></li>
             <li class="nav__item"><a href="photo.html" class="nav__item-link">Фотографии</a></li>
             <li class="nav__item"><a href="form.html" class="nav__item-link">Конкурс</a></li>
-            <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="nav__item-link">HTML Академия</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="nav__item-link">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
+      <script>
+        var navBtn = document.querySelector('.nav__container');
+        var navToggle = document.querySelector('.nav__toggle');
+        var menu = document.querySelector('.nav__list');
+        var navMain = document.querySelector('.nav__menu');
+
+        menu.classList.remove('nav__list--nojs');
+
+        navBtn.addEventListener('click', function() {
+          if (navToggle.classList.contains('nav__toggle--closed')) {
+            navToggle.classList.remove('nav__toggle--closed');
+            navToggle.classList.add('nav__toggle--opened');
+            menu.classList.add('nav__list-show');
+            navMain.classList.add('nav__menu--show');
+          } else {
+            navToggle.classList.add('nav__toggle--closed');
+            navToggle.classList.remove('nav__toggle--opened');
+            menu.classList.remove('nav__list-show');
+            navMain.classList.remove('nav__menu--show');
+          }
+        });
+      </script>
     </header>
     <main class="page-index">
       <h1 class="visually-hidden">Турагенство PINK</h1>
       <section class="banner">
         <div class="banner__wrapper">
-          <h2 class="banner__header">Взгляните на жизнь иначе!</h2>
-          <img class="banner__img" src="img/iphone-hand-mobile@1x.png" alt="Рука с телефоном" width="320" height="314">
+          <h2 class="banner__header ">Взгляните на жизнь иначе!</h2>
+          <div class="banner__hand"></div>
         </div>
         </section>
       <section class="app">
@@ -80,14 +101,16 @@
               <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="img/iphone-screen-mobile@1x.png" class="advantages__img" alt="Смайлик" width="157" height="320">
         </div>
       </section>
       <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__wrapper">
-          <h2 class="visually-hidden">Отзывы о нас</h2>
-          <ul class="reviews__list feedback">
-            <li class="feedback__item">
+          <input class="slider__switcher visually-hidden" type="radio" name="feedback" id="feedback-1" checked>
+          <input class="slider__switcher visually-hidden" type="radio" name="feedback" id="feedback-2">
+          <input class="slider__switcher visually-hidden" type="radio" name="feedback" id="feedback-3">
+          <ul class="feedback__list">
+            <li class="feedback__item slider__slide">
               <div class="feedback__container">
                 <blockquote class="feedback__content">
                   <p class="feedback__author-name">Николай Петров</p>
@@ -95,7 +118,7 @@
                 </blockquote>
               </div>
             </li>
-            <li class="feedback__item">
+            <li class="feedback__item slider__slide">
               <div class="feedback__container">
                 <blockquote class="feedback__content">
                   <p class="feedback__author-name">Николай Петров</p>
@@ -103,7 +126,7 @@
                 </blockquote>
               </div>
             </li>
-            <li class="feedback__item">
+            <li class="feedback__item slider__slide">
               <div class="feedback__container">
                 <blockquote class="feedback__content">
                   <p class="feedback__author-name">Николай Петров</p>
@@ -113,11 +136,9 @@
             </li>
           </ul>
           <div class="reviews__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item"><button class="slider__button" type="button"></button></li>
-              <li class="slider__item"><button class="slider__button" type="button"></button></li>
-              <li class="slider__item"><button class="slider__button" type="button"></button></li>
-            </ul>
+            <label class="slider-items__btn" for="feedback-1">1</label>
+            <label class="slider-items__btn" for="feedback-2">2</label>
+            <label class="slider-items__btn" for="feedback-3">3</label>
           </div>
         </div>
       </section>
@@ -128,28 +149,36 @@
             <table class="price__list">
               <thead class="price__list-head">
                 <tr>
-                  <th class="price__value">Стандарт<p class="price__value--price">3,99 USD</p></th>
+                  <th class="price__value">База<p class="price__value--price">1,99 USD</p></th>
+                  <th class="price__value">Стандарт<p class="price__value--price price__value--hits">3,99 USD</p></th>
+                  <th class="price__value">Анлим<p class="price__value--price">9,99 USD</p></th>
                 </tr>
               </thead>
               <tbody class="price__list-body">
                 <tr>
-                  <td class="price__field">Розовый фильтр</td>
+                  <td class="price__field">Розовый фильтр<span class="price__option price__option--yes"></span></td>
+                  <td class="price__field">Розовый фильтр<span class="price__option price__option--yes"></span></td>
+                  <td class="price__field">Розовый фильтр<span class="price__option price__option--yes"></span></td>
                 </tr>
                 <tr>
-                  <td class="price__field">Смайлики</td>
+                  <td class="price__field">Смайлики<span class="price__option price__option--no"></span></td>
+                  <td class="price__field">Смайлики<span class="price__option price__option--yes"></span></td>
+                  <td class="price__field price__no">Смайлики<span class="price__option price__option--yes"></span></td>
                 </tr>
                 <tr>
-                  <td class="price__field">Комментарии</td>
+                  <td class="price__field">Комментарии<span class="price__option price__option--no"></span></td>
+                  <td class="price__field">Комментарии<span class="price__option price__option--no"></span></td>
+                  <td class="price__field">Комментарии<span class="price__option price__option--yes"></span></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="rates__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item"><button class="slider__button" type="button"></button></li>
-              <li class="slider__item"><button class="slider__button" type="button"></button></li>
-              <li class="slider__item"><button class="slider__button" type="button"></button></li>
-            </ul>
+            <div class="reviews__slider slider">
+              <label class="slider-items__btn" for="feedback-1">1</label>
+              <label class="slider-items__btn" for="feedback-2">2</label>
+              <label class="slider-items__btn" for="feedback-3">3</label>
+            </div>
           </div>
         </div>
       </section>
@@ -158,16 +187,27 @@
           <h2 class="visually-hidden">Связаться с нами</h2>
           <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
-            <li class="contacts__item"><p class="contacts__item-header">Звоните:<a href="tel:+78125556666" class="contacts__info">+7 (812) 555-66-66</a></p></li>
-            <li class="contacts__item"><p class="contacts__item-header">Пишите:<a href="mailto:mail@htmlacademy.ru" class="contacts__info">mail@htmlacademy.ru</a></p></li>
-            <li class="contacts__item"><p class="contacts__item-header">Приезжайте в гости:<a href="#"  class="contacts__info">ул. Большая Конюшенная, 19/8</a></p></li>
+            <li class="contacts__item">
+              <p class="contacts__item-header">Звоните:</p>
+              <a href="tel:+78125556666" class="contacts__info">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-header">Пишите:</p>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__info">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-header">Приезжайте в гости:</p>
+              <a href="#"  class="contacts__info">ул. Большая Конюшенная, 19/8</a>
+            </li>
           </ul>
         </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__wrapper">
-          <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Большая Конюшенная, 19/8">
+          <div class="map__img">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CKgUfR-a" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
         </div>
         </section>
     </main>

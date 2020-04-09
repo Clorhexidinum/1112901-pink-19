@@ -1,7 +1,8 @@
 .post {
-  margin: 20px;
   background-color: $grey;
   position: relative;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .post__container {
@@ -16,12 +17,13 @@
   color: $blue;
   font-size: $med_txt;
   line-height: $med_lh;
-  margin: 25px 20px;
+  margin: 0 auto;
+  padding: 0 17px;
 }
 
 .post__author-name {
   font-weight: $bold;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .post__time {
@@ -35,15 +37,21 @@
 
 .post__likes-label {
   color: $pink;
-  margin: 25px 50px;
+  display: block;
+  margin: 9px 50px;
   padding-bottom: 25px;
   text-transform: uppercase;
+  position: relative;
+  font-size: $small_txt;
+  line-height: $med_lh;
+  cursor: pointer;
 }
 
 .post__likes-checkbox {
   position: absolute;
-  left: 1em;
-  width: 1em;
+  left: -32px;
+  top: 6px;
+  width: 14px;
   height: 1em;
   background-image: url("../img/icon-heart-off.svg");
   background-size: cover;
@@ -52,5 +60,5 @@
 }
 
 .post__likes-input:checked + .post__likes-checkbox {
-  background-image: url("../img/icon-heart-off.svg");
+  background-image: url("../img/icon-heart-on.svg");
 }
