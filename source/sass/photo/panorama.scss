@@ -1,7 +1,18 @@
-.panorama__container {
+.panorama {
+  background-color: $white;
   position: relative;
 }
 
+.panorama__container {
+  width: 100%;
+}
+
 .panorama__img {
-  margin-left: -20px;
+  display: block;
+  width: 100%;
+}
+
+.post__caption {
+  background-color: $grey;
+  margin: 0 20px;
 }

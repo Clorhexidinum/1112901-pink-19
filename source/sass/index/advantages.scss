@@ -1,6 +1,7 @@
 .advantages {
   text-align: center;
   background-color: $grey;
+  position: relative;
 
   &::after {
     display: block;
@@ -14,12 +15,12 @@
 }
 
 .advantages__container {
+  width: 100%;
   background-color: $white;
   color: $blue;
   font-size: $big_txt;
   font-weight: $light;
   line-height: $biger_lh;
-  padding: 16px 40px;
   padding-bottom: 45px;
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0 96%);
 }
@@ -52,4 +53,36 @@
   line-height: $med_lh;
   font-weight: $light;
   margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .advantages {
+    &::after {
+      display: block;
+      content: "";
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      width: 268px;
+      height: 480px;
+      background-size: 268px 480px;
+      padding: 0;
+    }
+  }
+
+  .advantages__container {
+    font-size: 40px;
+  }
+
+  .advantages__list {
+    min-width: 43%;
+    padding-left: 350px;
+    text-align: left;
+  }
+
+  .advantages__item {
+    min-height: 80px;
+  }
 }

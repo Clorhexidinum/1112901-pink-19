@@ -18,11 +18,34 @@
   font-size: $biger_txt;
   line-height: $biger_lh;
   font-weight: $bold;
+  position: relative;
 
   &--price {
     font-size: $big_txt;
     font-weight: $light;
     line-height: $biger_lh;
+  }
+
+  &--hits::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-hit.svg");
+    width: 73px;
+    height: 73px;
+  }
+
+  &--hits::after {
+    content: "хит";
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    transform: rotate(-45deg);
+    font-size: $med_txt;
+    line-height: $biger_lh;
+    font-weight: $regular;
   }
 }
 
@@ -33,7 +56,6 @@
 
 .price__field {
   position: relative;
-  box-sizing: border-box;
   font-size: $med_txt;
   font-weight: $regular;
   line-height: $biger_lh;
@@ -41,7 +63,6 @@
   text-transform: uppercase;
   padding: 15px 22px;
   min-width: 278px;
-  padding-right: 125px;
 }
 
 .price__option {

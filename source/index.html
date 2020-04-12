@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Турагенство PINK</title>
   </head>
-  <tr>
+  <body>
     <header class="page-header">
       <nav class="page-header__nav nav">
         <div class="nav__wrapper">
@@ -37,48 +37,26 @@
           </ul>
         </div>
       </nav>
-      <script>
-        var navBtn = document.querySelector('.nav__container');
-        var navToggle = document.querySelector('.nav__toggle');
-        var menu = document.querySelector('.nav__list');
-        var navMain = document.querySelector('.nav__menu');
-
-        menu.classList.remove('nav__list--nojs');
-
-        navBtn.addEventListener('click', function() {
-          if (navToggle.classList.contains('nav__toggle--closed')) {
-            navToggle.classList.remove('nav__toggle--closed');
-            navToggle.classList.add('nav__toggle--opened');
-            menu.classList.add('nav__list-show');
-            navMain.classList.add('nav__menu--show');
-          } else {
-            navToggle.classList.add('nav__toggle--closed');
-            navToggle.classList.remove('nav__toggle--opened');
-            menu.classList.remove('nav__list-show');
-            navMain.classList.remove('nav__menu--show');
-          }
-        });
-      </script>
     </header>
     <main class="page-index">
       <h1 class="visually-hidden">Турагенство PINK</h1>
       <section class="banner">
         <div class="banner__wrapper">
           <h2 class="banner__header ">Взгляните на жизнь иначе!</h2>
-          <div class="banner__hand"></div>
         </div>
-        </section>
-      <section class="app">
-        <h2 class="visually-hidden">Наше приложение</h2>
-        <div class="app__wrapper">
-          <button class="app__button">Скачать приложение</button>
-          <ul class="app__list">
-            <li class="app__item"><a href="" class="app__item-link app__item-link--ios"><span class="visually-hidden">IOS</span></a></li>
-            <li class="app__item"><a href="" class="app__item-link app__item-link--android"><span class="visually-hidden">Android</span></a></li>
-            <li class="app__item"><a href="" class="app__item-link app__item-link--windows"><span class="visually-hidden">Windows Phone</span></a></li>
-          </ul>
-          <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="banner__app app">
+          <h2 class="visually-hidden">Наше приложение</h2>
+          <div class="app__wrapper">
+            <button class="app__button">Скачать приложение</button>
+            <ul class="app__list">
+              <li class="app__item"><a href="" class="app__item-link app__item-link--ios"><span class="visually-hidden">IOS</span></a></li>
+              <li class="app__item"><a href="" class="app__item-link app__item-link--android"><span class="visually-hidden">Android</span></a></li>
+              <li class="app__item"><a href="" class="app__item-link app__item-link--windows"><span class="visually-hidden">Windows Phone</span></a></li>
+            </ul>
+            <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
+        <div class="banner__hand"></div>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -150,7 +128,7 @@
               <thead class="price__list-head">
                 <tr>
                   <th class="price__value">База<p class="price__value--price">1,99 USD</p></th>
-                  <th class="price__value">Стандарт<p class="price__value--price price__value--hits">3,99 USD</p></th>
+                  <th class="price__value price__value--hits">Стандарт<p class="price__value--price price__value">3,99 USD</p></th>
                   <th class="price__value">Анлим<p class="price__value--price">9,99 USD</p></th>
                 </tr>
               </thead>
@@ -206,9 +184,11 @@
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__wrapper">
           <div class="map__img">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CKgUfR-a" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CKgUfR-a" class="map__widget" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
           </div>
         </div>
         </section>
     </main>
+    <script src="js/menu.js"></script>
+  </body>
 </html>

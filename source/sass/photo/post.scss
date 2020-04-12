@@ -7,6 +7,7 @@
 
 .post__container {
   margin: 0;
+  text-align: center;
 }
 
 .post__decription {
@@ -23,7 +24,7 @@
 
 .post__author-name {
   font-weight: $bold;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .post__time {
@@ -51,8 +52,8 @@
   position: absolute;
   left: -32px;
   top: 6px;
-  width: 14px;
-  height: 1em;
+  width: 15px;
+  height: 1.1em;
   background-image: url("../img/icon-heart-off.svg");
   background-size: cover;
   fill: $pink;

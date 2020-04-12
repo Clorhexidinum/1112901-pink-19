@@ -17,6 +17,7 @@ $small_txt: 12px;
 $med_txt: 14px;
 $biger_txt: 18px;
 $big_txt: 24px;
+$very-big-txt: 50px;
 
 /* Line-height */
 
@@ -30,3 +31,9 @@ $big_lh: 32px;
 $light: 300;
 $regular: 400;
 $bold: 700;
+
+/* Resolution */
+
+$mobile: 320px;
+$tablet: 660px;
+$decktop: 1200px;

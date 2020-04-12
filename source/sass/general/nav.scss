@@ -167,3 +167,9 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: $tablet) {
+  .nav__menu {
+    padding: 45px 19px;
+  }
+}
