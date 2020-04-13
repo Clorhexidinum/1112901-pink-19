@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.post__img {
+  width: 100%;
+}
+
 .post__decription {
   display: none;
 }
@@ -51,7 +55,7 @@
 .post__likes-checkbox {
   position: absolute;
   left: -32px;
-  top: 6px;
+  top: 27px;
   width: 15px;
   height: 1.1em;
   background-image: url("../img/icon-heart-off.svg");
@@ -62,4 +66,14 @@
 
 .post__likes-input:checked + .post__likes-checkbox {
   background-image: url("../img/icon-heart-on.svg");
+}
+
+@media (min-width: $tablet) {
+  .post {
+    width: 290px;
+  }
+
+  .post__img {
+    height: 100px;
+  }
 }
