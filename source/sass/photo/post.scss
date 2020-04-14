@@ -19,6 +19,7 @@
 }
 
 .post__item {
+  position: relative;
   color: $blue;
   font-size: $med_txt;
   line-height: $med_lh;
@@ -40,11 +41,14 @@
   margin: 0;
 }
 
+.post__likes {
+  position: relative;
+}
+
 .post__likes-label {
   color: $pink;
   display: block;
-  margin: 9px 50px;
-  padding-bottom: 25px;
+  padding: 10px 50px;
   text-transform: uppercase;
   position: relative;
   font-size: $small_txt;
@@ -54,8 +58,8 @@
 
 .post__likes-checkbox {
   position: absolute;
-  left: -32px;
-  top: 27px;
+  left: 25px;
+  bottom: 17px;
   width: 15px;
   height: 1.1em;
   background-image: url("../img/icon-heart-off.svg");
@@ -70,10 +74,20 @@
 
 @media (min-width: $tablet) {
   .post {
-    width: 290px;
+    width: 300px;
   }
 
   .post__img {
-    height: 100px;
+    height: 300px;
+  }
+
+  .post__likes-label {
+    padding: 10px 17px;
+  }
+
+  .post__likes-checkbox {
+    position: absolute;
+    left: 264px;
+    bottom: 17px;
   }
 }

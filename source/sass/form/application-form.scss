@@ -2,11 +2,16 @@
   width: 100%;
 }
 
+.application-form__button {
+  margin: 0 20px;
+}
+
 .application-form__warning {
   color: $blue;
   font-weight: $regular;
   font-size: $med_txt;
   line-height: $biger_lh;
+  text-align: center;
 }
 
 .application-form__warning--star {

@@ -9,6 +9,9 @@
   line-height: $biger_lh;
   font-weight: $regular;
   color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 15px;
 }
 
 .system__label {
@@ -59,5 +62,13 @@
 
   &:active + .system__radio {
     border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet) {
+  .system  {
+    margin: 20px;
+    border: 2px solid $grey;
+    background-color: $white;
   }
 }

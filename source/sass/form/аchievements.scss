@@ -2,7 +2,6 @@
   border: 0;
   background-color: $grey;
   display: flex;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -13,6 +12,7 @@
   font-weight: $regular;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 15px;
 }
 
 .аchievements__label {
@@ -62,5 +62,13 @@
 
   &:focus + .аchievements__checkbox {
     border-color: $blue;
+  }
+}
+
+@media (min-width: $tablet) {
+  .аchievements {
+    margin: 20px;
+    border: 2px solid $grey;
+    background-color: $white;
   }
 }

@@ -36,8 +36,14 @@
 }
 
 @media (min-width: $tablet) {
+  .banner {
+    min-height: 440px;
+  }
+
   .banner__wrapper {
-    width: 45%;
+    &--index {
+      width: 45%;
+    }
   }
 
   .banner__header {

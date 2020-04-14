@@ -17,3 +17,20 @@
   background-color: $grey;
   margin: 0 20px;
 }
+
+@media (min-width: $tablet) {
+  .panorama__img {
+    height: 510px;
+  }
+
+  .panorama__likes {
+    position: absolute;
+    top: 502px;
+    right: 40px;
+  }
+
+  .panorama__likes-checkbox {
+    left: 114px;
+    top: 15px;
+  }
+}

@@ -13,3 +13,11 @@
 .offer__header {
   margin: 0;
 }
+
+@media (min-width: $tablet) {
+  .offer {
+    margin: 0;
+    padding: 100px 140px;
+    font-size: $biger_txt;
+  }
+}

@@ -8,6 +8,9 @@
   font-weight: $regular;
   font-size: $med_txt;
   line-height: $biger_lh;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .message__field {
@@ -28,5 +31,14 @@
 
   &:focus {
     border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet) {
+  .message {
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid $grey;
+    background-color: $white;
   }
 }
