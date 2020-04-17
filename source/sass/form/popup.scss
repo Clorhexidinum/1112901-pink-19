@@ -1,5 +1,5 @@
 .popup {
-  width: 100%;
+  padding: 20px;
   text-align: center;
   display: none;
 }
@@ -16,4 +16,25 @@
   line-height: $med_lh;
   font-weight: $regular;
   color: $blue;
+}
+
+@media (min-width: $tablet) {
+  .popup {
+    box-sizing: border-box;
+    width: 460px;
+    padding: 50px 80px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+    position: absolute;
+    }
+
+  .popup__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    font-size: $biger_txt;
+  }
 }

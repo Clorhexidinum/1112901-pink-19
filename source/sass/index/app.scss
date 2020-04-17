@@ -4,8 +4,9 @@
   font-size: $med_txt;
   line-height: $med_lh;
   text-align: center;
+  box-sizing: border-box;
+  min-height: 270px;
   padding: 29px 20px 17px;
-  max-width: 400px;
 }
 
 .app__button {
@@ -84,5 +85,10 @@
 @media (min-width: $tablet) {
   .app {
     background-color: $transparent;
+    max-width: 400px;
+  }
+
+  .app__description {
+    font-size: $biger_txt;
   }
 }

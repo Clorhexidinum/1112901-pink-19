@@ -38,3 +38,13 @@
     border-color: $pink;
   }
 }
+
+@media (min-width: $tablet) {
+  .full-name__label {
+    display: flex;
+  }
+
+  .full-name__field {
+    margin-left: 30px;
+  }
+}
