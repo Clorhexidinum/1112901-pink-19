@@ -1,0 +1,125 @@
+.banner {
+  background-color: $blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  text-align: center;
+  position: relative;
+
+  &--index {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 258px;
+      height: 286px;
+      bottom: 270px;
+      left: calc(50% - 160px);
+      background-image: url("../img/iphone-hand-mobile@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.banner__header {
+  font-size: $big_txt;
+  color: $white;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 105px 40px 55px;
+  font-weight: $light;
+  position: relative;
+
+  &--index {
+    margin: 0;
+    min-height: 370px;
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .banner {
+    min-height: 440px;
+
+    &--index::before {
+      position: absolute;
+      content: "";
+      width: 700px;
+      height: 545px;
+      bottom: 0;
+      left: calc(50% - 350px);
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .banner__wrapper {
+    &--index {
+      box-sizing: border-box;
+      min-width: 320px;
+      max-width: 400px;
+      position: relative;
+    }
+  }
+
+  .banner__header {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: $very-big-txt;
+    padding: 190px 95px 90px;
+    padding-top: 190px;
+    padding-left: 95px;
+    padding-bottom: 90px;
+
+    &--index {
+      padding: 40px;
+      padding-bottom: 0;
+      padding-top: 100px;
+      min-height: auto;
+    }
+  }
+
+  .banner__app {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $decktop) {
+  .banner {
+    min-height: 395px;
+
+    &--index::before {
+      position: absolute;
+      content: "";
+      width: 1050px;
+      height: 645px;
+      bottom: 0;
+      left: calc(50% - 350px);
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .banner__wrapper {
+    &--index {
+      padding-left: 165px;
+      box-sizing: border-box;
+      min-width: 435px;
+      max-width: 50%;
+      position: relative;
+    }
+  }
+
+  .banner__header {
+    font-size: $very-big-txt;
+    padding: 240px 235px 110px;
+
+    &--index {
+      max-width: 550px;
+      padding: 0;
+      padding-top: 240px;
+      padding-bottom: 65px;
+      min-width: auto;
+    }
+  }
+}

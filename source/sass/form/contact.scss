@@ -1,0 +1,33 @@
+.contact {
+  border: 0;
+  display: flex;
+  position: relative;
+}
+
+.contact__label {
+  font-size: $med_txt;
+  font-weight: $regular;
+  line-height: $biger_lh;
+  color: $pink;
+}
+
+.contact__field {
+  font-size: $biger_txt;
+  font-weight: $regular;
+  line-height: $biger_lh;
+  color: $blue;
+  padding: 24px 25px;
+  border: 2px solid $grey;
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}

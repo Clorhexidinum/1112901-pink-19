@@ -1,0 +1,164 @@
+.post-upload {
+  background-color: $grey;
+  margin-left: -4px;
+  padding: 20px;
+}
+
+.post-upload__wrapper {
+  text-align: center;
+}
+
+.post-upload__img {
+  margin-bottom: 20px;
+}
+
+.post-upload__filter-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  width: 75%;
+  height: 45px;
+}
+
+.post-upload__label {
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.post-upload__checkbox {
+  position: absolute;
+
+  &--size {
+    background-image: url("../img/icon-editor-crop-off.svg");
+    background-size: cover;
+    opacity: 0.7;
+    height: 45px;
+    width: 45px;
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill-off.svg");
+    background-size: cover;
+    opacity: 0.7;
+    height: 45px;
+    width: 50px;
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast-off.svg");
+    background-size: cover;
+    opacity: 0.7;
+    height: 32px;
+    width: 32px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.post-upload__input:checked + .post-upload__checkbox {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  opacity: 1;
+
+  &--size {
+    background-image: url("../img/icon-editor-crop-on.svg");
+    background-size: cover;
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill-on.svg");
+    background-size: cover;
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast-on.svg");
+    background-size: cover;
+    height: 2em;
+    width: 2em;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.post-upload__range-line {
+  position: relative;
+  height: 2px;
+  width: 85%;
+  background-color: $black;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border-bottom: 1px solid $dk_grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 0.7em;
+    height: 0.7em;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  &:active::after {
+    background-color: $pink;
+  }
+}
+
+.post-upload__submit {
+  font-size: $biger_txt;
+  line-height: $small_lh;
+  font-weight: $bold;
+  color: $pink;
+  background-color: $transparent;
+  padding: 16px;
+  border: 3px solid $pink;
+  border-radius: 30px;
+  outline: none;
+  min-width: 280px;
+  margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.post-upload__reset {
+  font-size: $biger_txt;
+  line-height: $small_lh;
+  font-weight: $bold;
+  color: $dk_grey;
+  background-color: $transparent;
+  padding: 16px;
+  border: 3px solid $dk_grey;
+  border-radius: 30px;
+  opacity: 0.7;
+  outline: none;
+  min-width: 275px;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    color: $dk_grey;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: $dk_grey;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,0 +1,41 @@
+/* Variables */
+@import "variables.scss";
+
+/* Global */
+@import "global/body.scss";
+@import "global/visually-hidden.scss";
+@import "global/fonts.scss";
+
+/* General */
+@import "general/nav.scss";
+@import "general/footer.scss";
+@import "general/banner.scss";
+@import "general/social.scss";
+
+/* Index */
+@import "index/app.scss";
+@import "index/advantages.scss";
+@import "index/feedback.scss";
+@import "index/slider.scss";
+@import "index/price.scss";
+@import "index/contacts.scss";
+@import "index/map.scss";
+
+
+/* Photo */
+@import "photo/gallery.scss";
+@import "photo/post.scss";
+@import "photo/post-upload.scss";
+@import "photo/panorama.scss";
+@import "photo/label.scss";
+
+/* Form */
+@import "form/full-name.scss";
+@import "form/аchievements.scss";
+@import "form/contact.scss";
+@import "form/system.scss";
+@import "form/message.scss";
+@import "form/button.scss";
+@import "form/popup.scss";
+@import "form/application-form.scss";
+@import "form/offer.scss";

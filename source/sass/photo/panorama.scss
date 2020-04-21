@@ -1,0 +1,36 @@
+.panorama {
+  background-color: $white;
+  position: relative;
+  width: 100%;
+}
+
+.panorama__container {
+  width: 100%;
+}
+
+.panorama__img {
+  display: block;
+  width: 100%;
+}
+
+.post__caption {
+  background-color: $grey;
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet) {
+  .panorama__img {
+    height: 510px;
+  }
+
+  .panorama__likes {
+    position: absolute;
+    top: 502px;
+    right: 40px;
+  }
+
+  .panorama__likes-checkbox {
+    left: 114px;
+    top: 15px;
+  }
+}

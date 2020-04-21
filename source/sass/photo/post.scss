@@ -1,0 +1,93 @@
+.post {
+  background-color: $grey;
+  position: relative;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.post__container {
+  margin: 0;
+  text-align: center;
+}
+
+.post__img {
+  width: 100%;
+}
+
+.post__decription {
+  display: none;
+}
+
+.post__item {
+  position: relative;
+  color: $blue;
+  font-size: $med_txt;
+  line-height: $med_lh;
+  margin: 0 auto;
+  padding: 0 17px;
+}
+
+.post__author-name {
+  font-weight: $bold;
+  margin: 0;
+}
+
+.post__time {
+  font-weight: $light;
+}
+
+.post__text {
+  font-weight: $regular;
+  margin: 0;
+}
+
+.post__likes {
+  position: relative;
+}
+
+.post__likes-label {
+  color: $pink;
+  display: block;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: $small_txt;
+  line-height: $med_lh;
+  cursor: pointer;
+}
+
+.post__likes-checkbox {
+  position: absolute;
+  left: 25px;
+  bottom: 17px;
+  width: 15px;
+  height: 1.1em;
+  background-image: url("../img/icon-heart-off.svg");
+  background-size: cover;
+  fill: $pink;
+  cursor: pointer;
+}
+
+.post__likes-input:checked + .post__likes-checkbox {
+  background-image: url("../img/icon-heart-on.svg");
+}
+
+@media (min-width: $tablet) {
+  .post {
+    width: 300px;
+  }
+
+  .post__img {
+    height: 300px;
+  }
+
+  .post__likes-label {
+    padding: 10px 17px;
+  }
+
+  .post__likes-checkbox {
+    position: absolute;
+    left: 264px;
+    bottom: 17px;
+  }
+}

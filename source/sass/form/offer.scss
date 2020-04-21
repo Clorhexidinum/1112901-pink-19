@@ -1,0 +1,23 @@
+.offer {
+  padding: 20px 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  background-color: $white;
+  color: $blue;
+  font-size: $med_txt;
+  line-height: $biger_lh;
+  text-align: center;
+  font-weight: $regular;
+}
+
+.offer__header {
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .offer {
+    margin: 0;
+    padding: 100px 140px;
+    font-size: $biger_txt;
+  }
+}

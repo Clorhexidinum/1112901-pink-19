@@ -1,0 +1,40 @@
+.popup {
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+.popup__header {
+  font-size: $biger_txt;
+  line-height: $med_lh;
+  font-weight: $bold;
+  color: $black;
+}
+
+.popup__message {
+  font-size: $med_txt;
+  line-height: $med_lh;
+  font-weight: $regular;
+  color: $blue;
+}
+
+@media (min-width: $tablet) {
+  .popup {
+    box-sizing: border-box;
+    width: 460px;
+    padding: 50px 80px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+    position: absolute;
+  }
+
+  .popup__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    font-size: $biger_txt;
+  }
+}

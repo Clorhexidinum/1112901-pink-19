@@ -1,0 +1,44 @@
+.message {
+  border: 0;
+  position: relative;
+}
+
+.message__label {
+  color: $pink;
+  font-weight: $regular;
+  font-size: $med_txt;
+  line-height: $biger_lh;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.message__field {
+  color: $blue;
+  font-weight: $regular;
+  font-size: $biger_txt;
+  line-height: $biger_lh;
+  padding: 24px 20px;
+  border: 2px solid $grey;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet) {
+  .message {
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid $grey;
+    background-color: $white;
+  }
+}
