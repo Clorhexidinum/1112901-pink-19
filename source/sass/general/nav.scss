@@ -173,3 +173,32 @@
     padding: 30px 19px;
   }
 }
+
+@media (min-width: $decktop) {
+  .nav__wrapper {
+    display: flex;
+  }
+
+  .nav__menu {
+    position: relative;
+    width: 20%;
+  }
+
+  .nav__container {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    font-weight: $regular;
+    line-height: $small_lh;
+    padding-right: 90px;
+  }
+
+  .nav__item {
+    border: 0;
+    padding: 0;
+    padding-top: 30px;
+  }
+}

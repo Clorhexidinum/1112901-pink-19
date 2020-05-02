@@ -92,10 +92,12 @@
             </fieldset>
             <fieldset class="application-form__contact contact">
               <legend class="contact__header">Контактная информация</legend>
-              <label for="phone" class="contact__label">Номер телефона</label>
-              <input type="tel" id="phone" class="contact__field" value="Номер, пожалуйта" required>
-              <label for="email" class="contact__label">Адрес почты</label>
-              <input type="email" id="email" class="contact__field" value="Ведите почту*" required>
+              <label for="phone" class="contact__label contact__label--phone">Номер телефона
+                <input type="tel" id="phone" class="contact__field" value="Номер, пожалуйта" required>
+              </label>
+              <label for="email" class="contact__label contact__label--email">Адрес почты
+                <input type="email" id="email" class="contact__field" value="Ведите почту*" required>
+              </label>
             </fieldset>
             <fieldset class="application-form__system system">
               <legend class="system__header">С каким приложением путешествовали?</legend>
@@ -116,8 +118,10 @@
               <legend class="message__label">Опишите свои эмоции</legend>
               <textarea class="message__field" rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <input type="submit" class="application-form__button button" value="Отправить форму">
-            <p class="application-form__warning"><span class="application-form__warning--star">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+            <div class="application-form__button-container">
+              <input type="submit" class="application-form__button button" value="Отправить форму">
+              <p class="application-form__warning"><span class="application-form__warning--star">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+            </div>
           </form>
         </div>
       </section>
