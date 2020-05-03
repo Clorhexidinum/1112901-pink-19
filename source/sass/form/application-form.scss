@@ -45,3 +45,31 @@
     align-items: center;
   }
 }
+
+@media (min-width: $decktop) {
+  .application-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .application-form__full-name {
+    width: 45%;
+  }
+
+  .application-form__system {
+    width: 45%;
+  }
+
+  .application-form__contact {
+    width: 100%;
+  }
+
+  .application-form__message {
+    width: 100%;
+  }
+
+  .application-form__button-container {
+    width: 100%;
+  }
+}

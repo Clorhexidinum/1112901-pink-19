@@ -4,6 +4,17 @@
   position: relative;
 }
 
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.contact__item {
+  width: 100%;
+}
+
 .contact__header {
   display: none;
 }
@@ -92,3 +103,14 @@
     }
   }
 }
+
+@media (min-width: $decktop) {
+  .contact__list {
+    justify-content: space-between;
+  }
+
+  .contact__item {
+    width: 45%;
+  }
+}
+

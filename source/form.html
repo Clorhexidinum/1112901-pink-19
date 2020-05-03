@@ -32,7 +32,7 @@
           <ul class="nav__list nav__list--nojs">
             <li class="nav__item"><a href="index.html" class="nav__item-link">Главная</a></li>
             <li class="nav__item"><a href="photo.html" class="nav__item-link">Фотографии</a></li>
-            <li class="nav__item"><a href="form.html" class="nav__item-link">Конкурс</a></li>
+            <li class="nav__item"><a href="form.html" class="nav__item-link nav__item-link--active">Конкурс</a></li>
             <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="nav__item-link">HTML Академия</a></li>
           </ul>
         </div>
@@ -65,39 +65,59 @@
             </fieldset>
             <fieldset class="application-form__аchievements аchievements">
               <legend class="аchievements__legend">Ваши безбашенные достижения в путешествии</legend>
-              <label for="shark" class="аchievements__label">
-                <input type="checkbox" name="Achievements" id="shark" value="shark" class="аchievements__input visually-hidden" checked>
-                <span class="аchievements__checkbox"></span>Сделал селфи с акулой
-              </label>
-              <label for="beach" class="аchievements__label">
-                <input type="checkbox" name="Achievements" id="beach" value="beach" class="аchievements__input visually-hidden" checked>
-                <span class="аchievements__checkbox"></span>Обгорел на пляже
-              </label>
-              <label for="Chuck" class="аchievements__label">
-                <input type="checkbox" name="Achievements" id="Chuck" value="Chuck" class="аchievements__input visually-hidden">
-                <span class="аchievements__checkbox"></span>Видел Чака Норриса
-              </label>
-              <label for="souvenir" class="аchievements__label">
-                <input type="checkbox" name="Achievements" id="souvenir" value="souvenir" class="аchievements__input visually-hidden">
-                <span class="аchievements__checkbox"></span>Накупил сувениров
-              </label>
-              <label for="tover" class="аchievements__label">
-                <input type="checkbox" name="Achievements" id="tover" value="tover" class="аchievements__input visually-hidden" checked>
-                <span class="аchievements__checkbox"></span>Удержал башню
-              </label>
-              <label for="hotel" class="аchievements__label">
-                <input type="checkbox" name="Achievements" id="hotel" value="hotel" class="аchievements__input visually-hidden">
-                <span class="аchievements__checkbox"></span>Разгромил отель
-              </label>
+              <ul class="аchievements__list">
+                <li class="аchievements__item">
+                  <label for="shark" class="аchievements__label">
+                    <input type="checkbox" name="Achievements" id="shark" value="shark" class="аchievements__input visually-hidden" checked>
+                    <span class="аchievements__checkbox"></span>Сделал селфи с акулой
+                  </label>
+                </li>
+                <li class="аchievements__item">
+                  <label for="beach" class="аchievements__label">
+                    <input type="checkbox" name="Achievements" id="beach" value="beach" class="аchievements__input visually-hidden" checked>
+                    <span class="аchievements__checkbox"></span>Обгорел на пляже
+                  </label>
+                </li>
+                <li class="аchievements__item">
+                  <label for="Chuck" class="аchievements__label">
+                    <input type="checkbox" name="Achievements" id="Chuck" value="Chuck" class="аchievements__input visually-hidden">
+                    <span class="аchievements__checkbox"></span>Видел Чака Норриса
+                  </label>
+                </li>
+                <li class="аchievements__item">
+                  <label for="souvenir" class="аchievements__label">
+                    <input type="checkbox" name="Achievements" id="souvenir" value="souvenir" class="аchievements__input visually-hidden">
+                    <span class="аchievements__checkbox"></span>Накупил сувениров
+                  </label>
+                </li>
+                <li class="аchievements__item">
+                  <label for="tover" class="аchievements__label">
+                    <input type="checkbox" name="Achievements" id="tover" value="tover" class="аchievements__input visually-hidden" checked>
+                    <span class="аchievements__checkbox"></span>Удержал башню
+                  </label>
+                </li>
+                <li class="аchievements__item">
+                  <label for="hotel" class="аchievements__label">
+                    <input type="checkbox" name="Achievements" id="hotel" value="hotel" class="аchievements__input visually-hidden">
+                    <span class="аchievements__checkbox"></span>Разгромил отель
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="application-form__contact contact">
               <legend class="contact__header">Контактная информация</legend>
-              <label for="phone" class="contact__label contact__label--phone">Номер телефона
-                <input type="tel" id="phone" class="contact__field" value="Номер, пожалуйта" required>
-              </label>
-              <label for="email" class="contact__label contact__label--email">Адрес почты
-                <input type="email" id="email" class="contact__field" value="Ведите почту*" required>
-              </label>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <label for="phone" class="contact__label contact__label--phone">Номер телефона
+                    <input type="tel" id="phone" class="contact__field" value="Номер, пожалуйта" required>
+                  </label>
+                </li>
+                <li class="contact__item">
+                  <label for="email" class="contact__label contact__label--email">Адрес почты
+                    <input type="email" id="email" class="contact__field" value="Ведите почту*" required>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="application-form__system system">
               <legend class="system__header">С каким приложением путешествовали?</legend>

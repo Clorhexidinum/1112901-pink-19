@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.аchievements__list {
+  list-style: none;
+  padding: 0;
+}
+
 .аchievements__legend {
   color: $pink;
   font-size: $med_txt;
@@ -70,5 +75,20 @@
     margin: 20px;
     border: 2px solid $grey;
     background-color: $white;
+  }
+}
+
+@media (min-width: $decktop) {
+  .аchievements__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .аchievements__item {
+    width: 30%;
+  }
+
+  .аchievements__item:not(:nth-child(3n)) {
+    margin-right: 30px;
   }
 }
