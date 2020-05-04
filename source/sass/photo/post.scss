@@ -82,7 +82,11 @@
 
 @media (min-width: $tablet) {
   .post {
-    width: 300px;
+    width: 48%;
+
+    &:not(:nth-child(even)) {
+      margin-right: 4%;
+    }
   }
 
   .post__caption {
@@ -91,6 +95,7 @@
 
   .post__img {
     width: 300px;
+    min-height: 300px;
   }
 
   .post__likes-label {
@@ -106,6 +111,8 @@
 
 @media (min-width: $decktop) {
   .post {
+    width: 32%;
+
     &:not(:nth-child(even)) {
       margin-right: 0;
     }

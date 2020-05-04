@@ -14,6 +14,9 @@
 @media (min-width: $tablet) {
   .gallery__list {
     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 20px;
   }
 }

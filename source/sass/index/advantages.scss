@@ -161,6 +161,22 @@
   }
 }
 
+  .advantages__effect-link {
+    font-size: $med_txt;
+    line-height: $med_lh;
+    font-weight: $bold;
+    color: $pink;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
 @media (min-width: $decktop) {
   .advantages__list {
     display: flex;
