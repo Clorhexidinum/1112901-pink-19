@@ -3,6 +3,7 @@
   position: relative;
   margin-bottom: 15px;
   text-align: left;
+  width: 280px;
 }
 
 .post__container {
@@ -11,11 +12,18 @@
 }
 
 .post__img {
-  width: 100%;
+  width: 280px;
+  height: 100%;
 }
 
 .post__decription {
   display: none;
+}
+
+.post__caption {
+  width: 280px;
+  margin: 0 auto;
+  background-color: $grey;
 }
 
 .post__item {
@@ -77,8 +85,12 @@
     width: 300px;
   }
 
+  .post__caption {
+    width: 620px;
+  }
+
   .post__img {
-    height: 300px;
+    width: 300px;
   }
 
   .post__likes-label {
@@ -89,5 +101,17 @@
     position: absolute;
     left: 264px;
     bottom: 17px;
+  }
+}
+
+@media (min-width: $decktop) {
+  .post {
+    &:not(:nth-child(even)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 2%;
+    }
   }
 }

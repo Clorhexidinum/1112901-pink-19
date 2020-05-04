@@ -8,6 +8,16 @@
   list-style: none;
 }
 
+.feedback__item {
+  &--two {
+    display: none;
+  }
+
+  &--three {
+    display: none;
+  }
+}
+
 .feedback__container {
   padding: 25px 20px;
   margin-bottom: 5px;
@@ -15,10 +25,6 @@
 
 .feedback__content {
   margin: 0;
-}
-
-.feedback__item {
-  text-align: center;
 }
 
 .feedback__author-name {
@@ -29,10 +35,102 @@
   margin-bottom: 13px;
 }
 
+.feedback__author-profession {
+  display: none;
+}
+
 .feedback__text {
   margin: 0;
   color: $blue;
   font-size: $med_txt;
   font-weight: $light;
   line-height: $biger_lh;
+}
+
+@media (min-width: $tablet) {
+  .feedback__content {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .feedback__author-name {
+    font-size: 20px;
+    margin: 0;
+    line-height: $biger_lh;
+  }
+
+  .feedback__author-profession {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $med_txt;
+    line-height: $biger_lh;
+    font-weight: $regular;
+  }
+
+  .feedback__text {
+    order: -1;
+    margin: 0 auto;
+    max-width: 915px;
+    font-size: $biger_txt;
+    font-weight: $regular;
+  }
+}
+
+@media (min-width: $decktop) {
+  .feedback__list {
+    position: relative;
+    padding-top: 150px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: calc(50% - 30px);
+      width: 80px;
+      height: 65px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .feedback__item {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .feedback__author-name {
+    font-size: $big_txt;
+  }
+
+  .feedback__author-profession {
+    font-size: $biger_txt;
+  }
+
+  .feedback__text {
+    font-size: $biger_txt;
+  }
 }

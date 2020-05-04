@@ -173,3 +173,49 @@
     padding: 30px 19px;
   }
 }
+
+@media (min-width: $decktop) {
+  .nav__wrapper {
+    display: flex;
+    background-color: $transparent-nav;
+    position: absolute;
+  }
+
+  .nav__menu {
+    position: relative;
+    width: 20%;
+    background-color: $transparent;
+  }
+
+  .nav__container {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    font-weight: $regular;
+    line-height: $small_lh;
+    padding-right: 90px;
+  }
+
+  .nav__item {
+    border: 0;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .nav__item-link {
+    text-transform: none;
+
+    &--active {
+      padding-bottom: 15px;
+      border-bottom: 2px solid $white;
+    }
+
+    &:hover {
+      padding-bottom: 15px;
+      border-bottom: 2px solid $pink;
+    }
+  }
+}

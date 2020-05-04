@@ -14,7 +14,7 @@
   font-size: $biger_txt;
   line-height: $small_lh;
   font-weight: $bold;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $transparent;
   padding: 16px 40px;
   border: 2px solid $white;
   border-radius: 30px;
@@ -58,7 +58,7 @@
     background-image: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
     width: 47px;
-    height: 56px;
+    height: 57px;
   }
 
   &--android {

@@ -6,16 +6,15 @@
   color: $white;
   border: 0;
   border-radius: 5px;
-  padding: 25px;
-  width: 100%;
+  padding: 15px 25px;
 
   &:hover,
   &:focus {
-    background-color: #1c9b5e;
+    background-color: $dk-green;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-active;
   }
 
   &:disabled {
