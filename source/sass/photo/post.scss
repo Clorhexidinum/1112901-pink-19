@@ -74,11 +74,15 @@
 
 @media (min-width: $tablet) {
   .post {
-    width: 300px;
+    width: 48%;
+
+    &:not(:nth-child(even)) {
+      margin-right: 4%;
+    }
   }
 
   .post__img {
-    height: 300px;
+    min-height: 300px;
   }
 
   .post__likes-label {
@@ -89,5 +93,19 @@
     position: absolute;
     left: 264px;
     bottom: 17px;
+  }
+}
+
+@media (min-width: $decktop) {
+  .post {
+    width: 32%;
+
+    &:not(:nth-child(even)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 2%;
+    }
   }
 }
