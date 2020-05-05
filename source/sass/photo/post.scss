@@ -82,7 +82,11 @@
 
 @media (min-width: $tablet) {
   .post {
-    width: 300px;
+    width: 48%;
+
+    &:not(:nth-child(even)) {
+      margin-right: 4%;
+    }
   }
 
   .post__caption {
