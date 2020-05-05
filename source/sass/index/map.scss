@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
   &::after {
     position: absolute;
     top: 50%;
@@ -28,11 +32,21 @@
 @media (min-width: $tablet) {
   .map__img {
     height: 375px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $decktop) {
   .map__img {
     height: 505px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 }

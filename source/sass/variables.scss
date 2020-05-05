@@ -8,6 +8,9 @@ $l_grey: #e5e5e5;
 $dk_grey: #7e868f;
 $black: #000000;
 $green: #2aab6d;
+$dk-green: #1c9b5e;
+$text-active: rgba(255, 255, 255, 0.5);
+$transparent-nav: rgba(40, 54, 69, 0.5);
 $transparent: rgba(0, 0, 0, 0);
 
 
@@ -17,6 +20,8 @@ $small_txt: 12px;
 $med_txt: 14px;
 $biger_txt: 18px;
 $big_txt: 24px;
+$fs-30px: 30px;
+$fs-40px: 40px;
 $very-big-txt: 50px;
 
 /* Line-height */
@@ -25,6 +30,8 @@ $small_lh: 18px;
 $med_lh: 24px;
 $biger_lh: 30px;
 $big_lh: 32px;
+$lh__36: 36px;
+$vb_lh: 40px;
 
 /* Font-weight */
 
@@ -34,6 +41,7 @@ $bold: 700;
 
 /* Resolution */
 
-$mobile: 320px;
 $tablet: 660px;
 $decktop: 1200px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

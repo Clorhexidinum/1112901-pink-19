@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="StyleSheet" href="css/normalize.min.css" type="text/css">
     <link rel="StyleSheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Фотогалерея</title>
@@ -54,7 +55,16 @@
           <div class="gallery__item panorama post">
             <p class="panorama__label label">Панорама дня</p>
             <figure class="post__container panorama__container">
-              <a href="#"><img class="post__img panorama__img" src="img/panorama-mobile@1x.jpg" alt="Горный спуск" width="320" height="137"></a>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@1x@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@1x@2x.webp 2x">
+                  <source type="image/webp" srcset="img/panorama-mobile@1xphoto-1-mobile.webp 1x, img/panorama-mobile@1x@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, panorama-tablet@2x.jpg 2x">
+                  <img class="post__img panorama__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Горный спуск" width="320" height="137">
+                </picture>
+              </a>
               <figcaption class="post__decription">Горный спуск</figcaption>
             </figure>
             <div class="post__caption">
@@ -74,7 +84,16 @@
           <ul class="gallery__list">
             <li class="gallery__item post">
               <figure class="post__container">
-                <a href="#"><img class="post__img" src="img/photo-car-mobile@1x.jpg" alt="Белый автомобиль" width="280" height="180"></a>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, photo-car-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Белый автомобиль" width="280" height="180">
+                  </picture>
+                </a>
                 <figcaption class="post__decription">Белый автомобиль</figcaption>
               </figure>
               <blockquote class="post__item">
@@ -91,7 +110,16 @@
             </li>
             <li class="gallery__item post">
               <figure class="post__container">
-                <a href="#"><img class="post__img" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280" height="180"></a>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-drumset-tablet.webp 1x, img/photo-drumset-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, photo-drumset-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны" width="280" height="180">
+                  </picture>
+                </a>
                 <figcaption class="post__decription">Барабаны</figcaption>
               </figure>
               <blockquote class="post__item">
@@ -108,7 +136,16 @@
             </li>
             <li class="gallery__item post">
               <figure class="post__container">
-                <a href="#"><img class="post__img" src="img/photo-window-mobile@1x.jpg" alt="Стеклянная крыша" width="280" height="180"></a>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-window-mobile@1x.jpg.webp 1x, img/photo-window-mobile@2x.jpg.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, photo-window-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Стеклянная крыша" width="280" height="180">
+                  </picture>
+                </a>
                 <figcaption class="post__decription">Стеклянная крыша</figcaption>
               </figure>
               <blockquote class="post__item">
@@ -125,7 +162,16 @@
             </li>
             <li class="gallery__item post">
               <figure class="post__container">
-                <a href="#"><img class="post__img" src="img/photo-fair-mobile@1x.jpg" alt="Бахча" width="280" height="180"></a>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, imgphoto-fair-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, photo-fair-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Бахча" width="280" height="180">
+                  </picture>
+                </a>
                 <figcaption class="post__decription">Бахча</figcaption>
               </figure>
               <blockquote class="post__item">
@@ -142,7 +188,16 @@
             </li>
             <li class="gallery__item post">
               <figure class="post__container">
-                <a href="#"><img class="post__img" src="img/photo-pov-mobile@1x.jpg" alt="Ноги" width="280" height="180"></a>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, photo-pov-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Ноги" width="280" height="180">
+                  </picture>
+                </a>
                 <figcaption class="post__decription">Ноги</figcaption>
               </figure>
               <blockquote class="post__item">
@@ -159,7 +214,16 @@
             </li>
             <li class="gallery__item post">
               <figure class="post__container">
-                <a href="#"><img class="post__img" src="img/photo-wing-mobile@1x.jpg" alt="Самолет" width="280" height="180"></a>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, photo-wing-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Самолет" width="280" height="180">
+                  </picture>
+                </a>
                 <figcaption class="post__decription">Самолет</figcaption>
               </figure>
               <blockquote class="post__item">
@@ -184,18 +248,25 @@
       <section class="post-upload">
         <h2 class="visually-hidden">Загрузите ваше фото</h2>
         <div class="post-upload__wrapper">
-          <img class="post-upload__img" src="img/photo-road-mobile@1x.jpg" alt="Дорога" width="280" height="374">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.jpg.webp 1x, img/photo-road-mobile@2x.jpg.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, photo-road-tablet@2x.jpg 2x">
+            <img class="post-upload__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Дорога" width="280" height="374">
+          </picture>
           <form class="post-upload__form">
             <ul class="post-upload__filter-list">
               <li class="post-upload__filter-item">
-                <svg class="post-upload__icon post-upload__icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <svg class="post-upload__icon post-upload__icon--crop" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z"/>
                   <path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                 </svg>
                 <div class="post-upload__line post-upload__line--crop"></div>
               </li>
               <li class="post-upload__filter-item">
-                <svg class="post-upload__icon post-upload__icon--fill" version="1.0" fill="#d22856" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <svg class="post-upload__icon post-upload__icon--fill" fill="#d22856" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z"/>
                   <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                   <rect y="40" width="48" height="3"/>
@@ -203,7 +274,7 @@
                 <div class="post-upload__line post-upload__line--fill"></div>
               </li>
               <li class="post-upload__filter-item">
-                <svg class="post-upload__icon post-upload__icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                <svg class="post-upload__icon post-upload__icon--contrast" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                   <path fill="#d22856" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                   <path fill="#d22856" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                 </svg>
@@ -221,7 +292,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo">
-          <svg class="footer__logo-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="147" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <svg class="footer__logo-img" x="0px" y="0px" width="147" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="footer__logo-img--title">
               <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>

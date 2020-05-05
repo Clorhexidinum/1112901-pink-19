@@ -10,11 +10,11 @@
 
   &:hover,
   &:focus {
-    background-color: #1c9b5e;
+    background-color: $dk-green;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-active;
   }
 
   &:disabled {

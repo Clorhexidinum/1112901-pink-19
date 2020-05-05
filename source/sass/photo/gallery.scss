@@ -4,12 +4,16 @@
 
 .gallery__list {
   padding: 0;
-  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
   list-style: none;
 }
 
 @media (min-width: $tablet) {
   .gallery__list {
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     margin: 0;

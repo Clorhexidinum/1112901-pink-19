@@ -90,7 +90,7 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-active;
   }
 }
 
@@ -117,7 +117,44 @@
 
   &:active {
     background-color: $dk_grey;
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-active;
+  }
+}
+
+@media (min-width: $tablet) {
+  .post-upload__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .post-upload__filter-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+  }
+
+  .post-upload__filter-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .post-upload__line {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $decktop) {
+  .post-upload {
+    margin: 0 20px;
   }
 }
 

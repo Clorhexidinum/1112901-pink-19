@@ -177,11 +177,14 @@
 @media (min-width: $decktop) {
   .nav__wrapper {
     display: flex;
+    background-color: $transparent-nav;
+    position: absolute;
   }
 
   .nav__menu {
     position: relative;
     width: 20%;
+    background-color: $transparent;
   }
 
   .nav__container {
