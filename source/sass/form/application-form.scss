@@ -7,6 +7,7 @@
 .application-form__button-container {
   display: flex;
   flex-direction: column;
+  padding-top: 27px;
 }
 
 .application-form__button {
@@ -19,30 +20,64 @@
   font-size: $med_txt;
   line-height: $biger_lh;
   text-align: center;
-  margin: 0 20px;
-}
+  margin: 35px;
+  text-transform: uppercase;
 
-.application-form__warning--star {
-  color: $pink;
+  &--star {
+    color: $pink;
+  }
+
+  &--msg {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
+  .application-form {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 29px;
+  }
+
   .application-form__full-name {
     order: -3;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
   }
 
   .application-form__system {
     order: -2;
+    margin-bottom: 57px;
   }
 
   .application-form__contact {
     order: -1;
+    margin-bottom: 55px;
+  }
+
+  .application-form__аchievements {
+    margin-bottom: 57px;
+  }
+
+  .application-form__message {
+    margin-bottom: 67px;
   }
 
   .application-form__button-container {
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .application-form__button {
+    margin: 0;
+    padding: 17px 58px;
+  }
+
+  .application-form__warning {
+    margin: 0;
   }
 }
 
@@ -51,25 +86,41 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px 130px 0;
   }
 
   .application-form__full-name {
-    width: 45%;
+    width: 46%;
+  }
+
+  .application-form__аchievements {
+    width: 100%;
   }
 
   .application-form__system {
-    width: 45%;
+    width: 43%;
+    margin: 0 0 57px;
   }
 
   .application-form__contact {
     width: 100%;
+    margin: -3px 0 57px;
   }
 
   .application-form__message {
     width: 100%;
+    margin: 0 0 64px;
   }
 
   .application-form__button-container {
     width: 100%;
+  }
+
+  .application-form__warning {
+    padding-top: 5px;
+
+    &--msg {
+      display: inline;
+    }
   }
 }

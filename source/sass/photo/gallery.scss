@@ -13,7 +13,24 @@
 
 @media (min-width: $tablet) {
   .gallery__list {
-    justify-content: space-between;
-    padding: 20px;
+    padding: 38px 20px;
+  }
+
+  .gallery__item {
+    &:not(:nth-child(even)) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $decktop) {
+  .gallery__item {
+    &:not(:nth-child(even)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 20px;
+    }
   }
 }

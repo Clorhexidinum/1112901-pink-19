@@ -2,16 +2,32 @@
   border: 0;
   background-color: $grey;
   display: flex;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 52px;
 }
 
 .system__header {
-  font-size: $biger_txt;
-  line-height: $biger_lh;
+  font-size: $med_txt;
+  line-height: $small_lh;
   font-weight: $regular;
   color: $pink;
   text-align: center;
   text-transform: uppercase;
   padding: 0 15px;
+  position: absolute;
+  top: 37px;
+  left: 0;
+}
+
+.system__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.system__item:not(:last-child) {
+  margin-bottom: 56px;
 }
 
 .system__label {
@@ -21,7 +37,7 @@
   font-weight: $regular;
   position: relative;
   margin: 25px 0;
-  padding-left: 2em;
+  padding: 12px 75px;
   cursor: pointer;
 
   &:hover .system__radio {
@@ -36,10 +52,10 @@
 .system__radio {
   content: "";
   position: absolute;
-  left: 0.3em;
-  top: -3px;
-  width: 1.3em;
-  height: 1.3em;
+  left: 5px;
+  top: 4px;
+  width: 36px;
+  height: 36px;
   border: 2px solid $l_grey;
   border-radius: 50%;
 }
@@ -49,10 +65,10 @@
     background-image: url("../img/icon-map-marker.svg");
     background-size: cover;
     position: absolute;
-    left: 0.3em;
-    top: -3px;
-    width: 1.3em;
-    height: 1.3em;
+    left: 5px;
+    top: 4px;
+    width: 36px;
+    height: 36px;
   }
 
   &:focus + .system__radio,
@@ -67,8 +83,57 @@
 
 @media (min-width: $tablet) {
   .system {
-    margin: 20px;
     border: 2px solid $grey;
     background-color: $white;
+    padding: 5px 12px;
+  }
+
+  .system__header {
+    position: relative;
+    padding: 0 25px;
+    top: 0;
+  }
+
+  .system__list {
+    padding: 50px 67px 60px;
+  }
+
+  .system__label {
+    padding: 12px 36px;
+  }
+
+  .system__radio {
+    left: -23px;
+  }
+
+  .system__input {
+    &:checked + .system__radio {
+      left: -23px;
+    }
+  }
+}
+
+@media (min-width: $decktop) {
+  .system__header {
+    top: 2px;
+  }
+
+  .system__list {
+    padding: 53px 67px 63px;
+  }
+
+  .system__label {
+    padding-left: 51px;
+  }
+
+  .system__radio {
+    left: -7px;
+  }
+
+  .system__input {
+    &:checked + .system__radio {
+      top: 5px;
+      left: -8px;
+    }
   }
 }

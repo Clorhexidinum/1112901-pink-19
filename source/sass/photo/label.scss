@@ -10,6 +10,19 @@
   line-height: $med_lh;
   font-weight: $bold;
   text-transform: uppercase;
-  padding: 6px 19px;
+  padding: 6px 20px;
   margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .label {
+    top: 57px;
+  }
+}
+
+@media (min-width: $decktop) {
+  .label {
+    top: 54px;
+    right: 130px;
+  }
 }

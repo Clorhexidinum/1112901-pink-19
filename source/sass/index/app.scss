@@ -5,8 +5,8 @@
   line-height: $med_lh;
   text-align: center;
   box-sizing: border-box;
-  min-height: 273px;
-  padding: 29px 20px 17px;
+  min-height: 272px;
+  padding: 29px 20px 18px;
 }
 
 .app__button {
@@ -15,13 +15,13 @@
   line-height: $small_lh;
   font-weight: $bold;
   background-color: $transparent;
-  padding: 17px 32px;
+  padding: 16px 32px;
   border: 2px solid $white;
   border-radius: 30px;
   cursor: pointer;
   outline: 0;
   letter-spacing: 0.5px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   &:hover,
   &:focus {
@@ -38,9 +38,9 @@
 .app__list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  padding: 0 20px;
+  padding: 0 38px;
   margin-bottom: 21px;
 }
 
@@ -85,10 +85,47 @@
 @media (min-width: $tablet) {
   .app {
     background-color: $transparent;
-    max-width: 400px;
+    max-width: 350px;
+    padding: 27px 0 18px;
+    margin: 0;
+    margin-left: -20px;
+  }
+
+  .app__wrapper {
+    padding-bottom: 72px;
   }
 
   .app__description {
     font-size: $biger_txt;
+  }
+
+  .app__button {
+    padding: 16px 42px;
+    margin-bottom: 28px;
+    margin-left: -10px;
+  }
+
+  .app__list {
+    padding: 2px 78px 0;
+    padding-left: 66px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $decktop) {
+  .app {
+    padding: 0 0 30px;
+  }
+
+  .app__button {
+    padding: 16px 42px;
+    margin-bottom: 52px;
+    margin-left: -13px;
+  }
+
+  .app__list {
+    padding: 0 63px;
+    margin-bottom: 58px;
+    margin-left: -17px;
   }
 }

@@ -34,7 +34,7 @@
             <li class="nav__item"><a href="index.html" class="nav__item-link">Главная</a></li>
             <li class="nav__item"><a href="photo.html" class="nav__item-link">Фотографии</a></li>
             <li class="nav__item"><a href="form.html" class="nav__item-link nav__item-link--active">Конкурс</a></li>
-            <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="nav__item-link">HTML Академия</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="nav__item-link">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -49,55 +49,60 @@
       <section class="form">
         <h2 class="visually-hidden">Заявка</h2>
         <div class="form__wrapper">
-          <div class="form__offer offer">
-            <p class="offer__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <div class="form__offer offer offer--form">
+            <p class="offer__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="offer__header-tablet"> Пожалуйста, заполните форму ниже:</span></p>
           </div>
           <form class="form__application-form application-form">
             <fieldset class="application-form__full-name full-name">
-              <label for="last-name" class="full-name__label">Фамилия:
-                <input type="text" id="last-name" class="full-name__field" name="last-name" value="Укажите фамилию*">
-              </label>
-              <label for="first-name" class="full-name__label">Имя:
-                <input type="text" id="first-name" class="full-name__field" name="first-name" value="Введите ваше имя *">
-              </label>
-              <label for="patronymic" class="full-name__label">Отчество:
-                <input type="text" id="patronymic" class="full-name__field" name="middle-name" value="Ну и отчество тоже">
-              </label>
+              <ul class="full-name__list">
+                <li class="full-name__item">
+                  <label for="last-name" class="full-name__label">Фамилия:</label>
+                  <input type="text" id="last-name" class="full-name__field" name="last-name" value="Укажите фамилию *">
+                </li>
+                <li class="full-name__item">
+                  <label for="first-name" class="full-name__label">Имя:</label>
+                  <input type="text" id="first-name" class="full-name__field" name="first-name" value="Введите ваше имя *">
+                </li>
+                <li class="full-name__item">
+                  <label for="patronymic" class="full-name__label">Отчество:</label>
+                  <input type="text" id="patronymic" class="full-name__field" name="middle-name" value="Ну и отчество тоже">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="application-form__аchievements аchievements">
               <legend class="аchievements__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="аchievements__list">
-                <li class="аchievements__item">
+                <li class="аchievements__item аchievements__item--shark">
                   <label for="shark" class="аchievements__label">
                     <input type="checkbox" name="Achievements" id="shark" value="shark" class="аchievements__input visually-hidden" checked>
                     <span class="аchievements__checkbox"></span>Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="аchievements__item">
+                <li class="аchievements__item аchievements__item--beach">
                   <label for="beach" class="аchievements__label">
                     <input type="checkbox" name="Achievements" id="beach" value="beach" class="аchievements__input visually-hidden" checked>
                     <span class="аchievements__checkbox"></span>Обгорел на пляже
                   </label>
                 </li>
-                <li class="аchievements__item">
+                <li class="аchievements__item аchievements__item--chuck">
                   <label for="Chuck" class="аchievements__label">
-                    <input type="checkbox" name="Achievements" id="Chuck" value="Chuck" class="аchievements__input visually-hidden">
+                    <input type="checkbox" name="Achievements" id="chuck" value="Chuck" class="аchievements__input visually-hidden">
                     <span class="аchievements__checkbox"></span>Видел Чака Норриса
                   </label>
                 </li>
-                <li class="аchievements__item">
+                <li class="аchievements__item аchievements__item--souvenir">
                   <label for="souvenir" class="аchievements__label">
                     <input type="checkbox" name="Achievements" id="souvenir" value="souvenir" class="аchievements__input visually-hidden">
                     <span class="аchievements__checkbox"></span>Накупил сувениров
                   </label>
                 </li>
-                <li class="аchievements__item">
+                <li class="аchievements__item аchievements__item--tover">
                   <label for="tover" class="аchievements__label">
                     <input type="checkbox" name="Achievements" id="tover" value="tover" class="аchievements__input visually-hidden" checked>
                     <span class="аchievements__checkbox"></span>Удержал башню
                   </label>
                 </li>
-                <li class="аchievements__item">
+                <li class="аchievements__item аchievements__item--hotel">
                   <label for="hotel" class="аchievements__label">
                     <input type="checkbox" name="Achievements" id="hotel" value="hotel" class="аchievements__input visually-hidden">
                     <span class="аchievements__checkbox"></span>Разгромил отель
@@ -109,39 +114,45 @@
               <legend class="contact__header">Контактная информация</legend>
               <ul class="contact__list">
                 <li class="contact__item">
-                  <label for="phone" class="contact__label contact__label--phone">Номер телефона
-                    <input type="tel" id="phone" class="contact__field" value="Номер, пожалуйта" required>
-                  </label>
+                  <label for="phone" class="contact__label contact__label--phone">Номер телефона</label>
+                  <input type="tel" id="phone" class="contact__field" value="Номер, пожалуйста" required>
                 </li>
                 <li class="contact__item">
-                  <label for="email" class="contact__label contact__label--email">Адрес почты
-                    <input type="email" id="email" class="contact__field" value="Ведите почту*" required>
-                  </label>
+                  <label for="email" class="contact__label contact__label--email">Адрес почты</label>
+                  <input type="email" id="email" class="contact__field" value="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="application-form__system system">
               <legend class="system__header">С каким приложением путешествовали?</legend>
-              <label class="system__label" for="ios">
-                <input type="radio" name="app" id="ios" value="ios" class="system__input visually-hidden" checked>
-                <span class="system__radio"></span>Pink для IOS
-              </label>
-              <label class="system__label" for="android">
-                <input type="radio" name="app" id="android" value="android" class="system__input visually-hidden">
-                <span class="system__radio"></span>Pink на Android
-              </label>
-              <label class="system__label" for="windows-phone">
-                <input type="radio" name="app" id="windows-phone" value="windows-phone" class="system__input visually-hidden">
-                <span class="system__radio"></span>Windows Phone
-              </label>
+              <ul class="system__list">
+                <li class="system__item">
+                  <label class="system__label" for="ios">
+                    <input type="radio" name="app" id="ios" value="ios" class="system__input visually-hidden" checked>
+                    <span class="system__radio"></span>Pink для IOS
+                  </label>
+                </li>
+                <li class="system__item"></li>
+                  <label class="system__label" for="android">
+                    <input type="radio" name="app" id="android" value="android" class="system__input visually-hidden">
+                    <span class="system__radio"></span>Pink на Android
+                  </label>
+                </li>
+                <li class="system__item"></li>
+                  <label class="system__label" for="windows-phone">
+                    <input type="radio" name="app" id="windows-phone" value="windows-phone" class="system__input visually-hidden">
+                    <span class="system__radio"></span>Windows Phone
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="application-form__message message">
               <legend class="message__label">Опишите свои эмоции</legend>
-              <textarea class="message__field" rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="message__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="application-form__button-container">
               <input type="submit" class="application-form__button button" value="Отправить форму">
-              <p class="application-form__warning"><span class="application-form__warning--star">*</span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+              <p class="application-form__warning"><span class="application-form__warning--star">*</span> — Обязательные<span class="application-form__warning--msg"> для заполнения</span> поля</p>
             </div>
           </form>
         </div>
@@ -168,12 +179,14 @@
             <li class="social__item"><a class="social__item-link social__item-link--youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
           </ul>
         </div>
-        <p class="footer__made-in">Разработано <a class="footer__made-in-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="footer__made-in-logo" viewBox="0 0 60 60" width="27" height="34">
-            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-          </svg>
-          <span class="visually-hidden">HTML Academy</span></a>
-        </p>
+        <div class="footer__made-in">
+          <p class="footer__made-in-paragraph">Разработано <a class="footer__made-in-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__made-in-logo" viewBox="0 0 60 60" width="27" height="34">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+            <span class="visually-hidden">HTML Academy</span></a>
+          </p>
+        </div>
       </div>
     </footer>
     <div class="popup popup--error">

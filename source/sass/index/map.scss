@@ -5,7 +5,7 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 24%, 100% 7%, 100% 100%, 0 100%, 0 7%);
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -13,7 +13,7 @@
 
   &::after {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 8px);
     left: calc(50% - 19px);
     text-align: center;
     margin: 0 auto;
@@ -33,20 +33,30 @@
   .map__img {
     height: 375px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
+    clip-path: polygon(50% 18%, 100% 1%, 100% 100%, 0 100%, 0 1%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+
+    &::after {
+      top: calc(50% - -9px);
     }
   }
 }
 
 @media (min-width: $decktop) {
   .map__img {
-    height: 505px;
+    height: 500px;
     background-image: url("../img/bg-map-desktop@1x.png");
+    clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
+
+  &::after {
+    top: calc(50% - -12px);
   }
 }
