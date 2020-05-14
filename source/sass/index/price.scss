@@ -112,7 +112,7 @@
 
 @media (min-width: $tablet) {
   .price__list {
-    left: 0;
+    left: calc(50% - 312px);
   }
 
   .price__container {
@@ -185,6 +185,10 @@
   .price__container {
     padding: 150px 130px 45px;
     clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .price__list {
+    left: calc(50% - 471px);
   }
 
   .price__value {
