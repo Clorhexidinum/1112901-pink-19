@@ -3,21 +3,31 @@
   background-color: $grey;
   display: flex;
   box-sizing: border-box;
+  position: relative;
+  padding-top: 108px;
 }
 
 .аchievements__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 39px;
+}
+
+.аchievements__item:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .аchievements__legend {
+  position: absolute;
+  top: 38px;
+  left: 0;
   color: $pink;
   font-size: $med_txt;
   line-height: $small_lh;
   font-weight: $regular;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 0 35px;
 }
 
 .аchievements__label {
@@ -26,7 +36,7 @@
   line-height: $small_lh;
   font-weight: $regular;
   position: relative;
-  padding-left: 30px;
+  padding-left: 75px;
   cursor: pointer;
   margin: 50px 0;
 
@@ -42,10 +52,10 @@
 .аchievements__checkbox {
   content: "";
   position: absolute;
-  left: 0.3em;
-  top: -3px;
-  width: 1.3em;
-  height: 1.3em;
+  left: 6px;
+  top: -7px;
+  width: 34px;
+  height: 34px;
   border: 2px solid $l_grey;
   border-radius: 2px;
 }
@@ -53,16 +63,11 @@
 .аchievements__input {
   &:checked + .аchievements__checkbox {
     background-image: url("../img/icon-checked.svg");
-    background-position-x: 2px;
-    background-position-y: 4px;
-    background-size: 19px;
+    background-position: 8px;
+    background-size: 22px;
     background-repeat: no-repeat;
     content: "";
     position: absolute;
-    left: 0.3em;
-    top: -3px;
-    width: 1.3em;
-    height: 1.3em;
   }
 
   &:focus + .аchievements__checkbox {
@@ -72,23 +77,45 @@
 
 @media (min-width: $tablet) {
   .аchievements {
-    margin: 20px;
     border: 2px solid $grey;
     background-color: $white;
+    padding: 40px;
+    padding-bottom: 17px;
+  }
+
+  .аchievements__legend {
+    position: relative;
+    top: 0;
+  }
+
+  .аchievements__checkbox {
+    left: 16px;
+    top: -8px;
+    width: 36px;
+    height: 36px;
   }
 }
 
 @media (min-width: $decktop) {
+  .аchievements {
+    padding: 55px 18px 55px 41px;
+  }
+
   .аchievements__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    flex-direction: column;
+    height: 110px;
   }
 
   .аchievements__item {
-    width: 30%;
-  }
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
 
-  .аchievements__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+    &:not(:nth-child(even)) {
+      margin-bottom: 63px;
+    }
   }
 }

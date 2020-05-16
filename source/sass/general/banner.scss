@@ -34,20 +34,27 @@
   font-size: $big_txt;
   color: $white;
   margin: 0;
-  margin-bottom: 10px;
-  padding: 105px 40px 55px;
+  padding: 29px 40px 53px;
   font-weight: $light;
+  line-height: $biger_lh;
   position: relative;
 
   &--index {
-    min-height: 370px;
+    min-height: 371px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 24px;
+  }
+
+  &--photo {
+    padding: 30px 40px 83px;
   }
 }
 
 
 @media (min-width: $tablet) {
   .banner {
-    min-height: 440px;
+    min-height: 328px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -72,6 +79,7 @@
 
   .banner__wrapper {
     &--index {
+      margin-left: 3%;
       box-sizing: border-box;
       min-width: 320px;
       max-width: 400px;
@@ -80,19 +88,25 @@
   }
 
   .banner__header {
-    max-width: 750px;
     margin: 0 auto;
-    font-size: $very-big-txt;
-    padding: 190px 95px 90px;
-    padding-top: 190px;
-    padding-left: 95px;
-    padding-bottom: 90px;
+    font-size: $fs-40px;
+    line-height: $lh_50;
 
     &--index {
-      padding: 40px;
-      padding-bottom: 0;
-      padding-top: 100px;
+      padding: 90px 127px 2px 38px;
       min-height: auto;
+    }
+
+    &--photo {
+      padding: 69px 90px 90px;
+      font-size: $very-big-txt;
+      line-height: 59px;
+    }
+
+    &--form {
+      padding: 69px 84px 81px;
+      font-size: $very-big-txt;
+      line-height: 60px;
     }
   }
 
@@ -115,8 +129,8 @@
       content: "";
       width: 1050px;
       height: 645px;
-      bottom: 0;
-      left: calc(50% - 350px);
+      bottom: -1px;
+      left: calc(50% - 454px);
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
 
@@ -128,10 +142,10 @@
 
   .banner__wrapper {
     &--index {
-      padding-left: 165px;
+      padding-left: 130px;
       box-sizing: border-box;
       min-width: 435px;
-      max-width: 50%;
+      max-width: 37%;
       position: relative;
     }
   }
@@ -143,9 +157,18 @@
     &--index {
       max-width: 550px;
       padding: 0;
-      padding-top: 240px;
-      padding-bottom: 65px;
+      padding-top: 220px;
+      padding-bottom: 55px;
       min-width: auto;
+      line-height: 59px;
+    }
+
+    &--photo {
+      padding: 175px 270px 103px;
+    }
+
+    &--form {
+      padding: 174px 200px 101px;
     }
   }
 }

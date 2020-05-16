@@ -3,6 +3,14 @@
   display: flex;
   position: relative;
   box-sizing: border-box;
+  padding: 0 18px;
+  margin-bottom: 23px;
+}
+
+.full-name__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .full-name__label {
@@ -11,6 +19,9 @@
   font-size: $med_txt;
   line-height: $biger_lh;
   text-transform: uppercase;
+  display: inline-block;
+  padding-left: 22px;
+  margin-bottom: 4px;
 }
 
 .full-name__field {
@@ -37,15 +48,41 @@
 
 @media (min-width: $tablet) {
   .full-name {
-    margin: 20px;
+    margin: 15px 20px;
+  }
+
+  .full-name__list {
+    padding: 40px 0 0;
+  }
+
+  .full-name__item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 32px;
   }
 
   .full-name__label {
     display: flex;
     align-items: baseline;
+    padding: 0;
   }
 
   .full-name__field {
-    margin-left: 30px;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: $decktop) {
+  .full-name__list {
+    padding: 15px 0 0;
+  }
+
+  .full-name__item {
+    margin-bottom: 33px;
+  }
+
+  .full-name__field {
+    margin-left: 20px;
+    padding: 15px 19px;
   }
 }

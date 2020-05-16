@@ -12,6 +12,7 @@
 
 .nav__wrapper {
   position: relative;
+  box-sizing: border-box;
   width: 100%;
   z-index: 2;
 }
@@ -22,11 +23,12 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 19px;
-  background-color: rgba(40, 54, 69, 0.7);
+  padding: 18px;
+  background-color: $transparent-nav;
 
   &--show {
     position: relative;
+    padding: 21px 21px 17px;
   }
 }
 
@@ -97,7 +99,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    right: 2px;
     width: 51px;
     height: 4px;
     background-color: $white;
@@ -170,7 +172,21 @@
 
 @media (min-width: $tablet) {
   .nav__menu {
-    padding: 30px 19px;
+    padding: 32px 19px;
+
+    &--show {
+      padding: 37px 19px;
+    }
+  }
+
+  .nav__logo {
+    margin-top: 5px;
+  }
+
+  .nav__toggle {
+    &--opened {
+      top: 15px;
+    }
   }
 }
 
@@ -179,12 +195,14 @@
     display: flex;
     background-color: $transparent-nav;
     position: absolute;
+    padding: 15px 130px 10px;
   }
 
   .nav__menu {
     position: relative;
     width: 20%;
     background-color: $transparent;
+    padding: 24px 19px;
   }
 
   .nav__container {
@@ -193,28 +211,28 @@
 
   .nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-weight: $regular;
     line-height: $small_lh;
-    padding-right: 90px;
+    margin-left: 181px;
+    padding-top: 31px;
   }
 
   .nav__item {
     border: 0;
     padding: 0;
-    padding-top: 30px;
   }
 
   .nav__item-link {
     text-transform: none;
 
     &--active {
-      padding-bottom: 15px;
+      padding-bottom: 7px;
       border-bottom: 2px solid $white;
     }
 
     &:hover {
-      padding-bottom: 15px;
+      padding-bottom: 7px;
       border-bottom: 2px solid $pink;
     }
   }
