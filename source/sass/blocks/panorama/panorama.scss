@@ -1,0 +1,60 @@
+.panorama {
+  background-color: $white;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.panorama__container {
+  width: 100%;
+}
+
+.panorama__img {
+  display: block;
+  width: 320px;
+  height: 138px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .panorama {
+    margin-bottom: 1px;
+  }
+
+  .panorama__img {
+    height: 509px;
+    width: 660px;
+  }
+
+  .panorama__likes {
+    position: absolute;
+    top: 523px;
+    left: 484px;
+  }
+
+  .panorama__likes-label {
+    padding: 10px;
+  }
+
+  .panorama__likes-checkbox {
+    left: 114px;
+    top: 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .panorama__img {
+    height: 506px;
+    width: 1200px;
+  }
+
+  .post__caption {
+    width: 940px;
+    padding: 24px 0;
+  }
+
+  .panorama__likes {
+    top: 521px;
+    left: 910px;
+  }
+}

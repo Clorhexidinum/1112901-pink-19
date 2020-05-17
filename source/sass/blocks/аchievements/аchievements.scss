@@ -1,0 +1,128 @@
+.аchievements {
+  border: 0;
+  background-color: $grey;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 108px;
+}
+
+.аchievements__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 42px;
+}
+
+.аchievements__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.аchievements__legend {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  color: $pink;
+  font-size: $med_txt;
+  line-height: $small_lh;
+  font-weight: $regular;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 35px;
+}
+
+.аchievements__label {
+  color: $blue;
+  font-size: $biger_txt;
+  line-height: $small_lh;
+  font-weight: $regular;
+  position: relative;
+  padding-left: 75px;
+  cursor: pointer;
+  margin: 50px 0;
+
+  &:hover .аchievements__checkbox {
+    border-color: $blue;
+  }
+
+  &:active .аchievements__checkbox {
+    border-color: $pink;
+  }
+
+  &--disabled .аchievements__checkbox {
+    opacity: 0.5;
+  }
+}
+
+.аchievements__checkbox {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: -7px;
+  width: 34px;
+  height: 34px;
+  border: 2px solid $l_grey;
+  border-radius: 2px;
+}
+
+.аchievements__input {
+  &:checked + .аchievements__checkbox {
+    background-image: url("../img/icon-checked.svg");
+    background-position: 8px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+  }
+
+  &:focus + .аchievements__checkbox {
+    border-color: $blue;
+  }
+}
+
+@media (min-width: $tablet) {
+  .аchievements {
+    border: 2px solid $grey;
+    background-color: $white;
+    padding: 40px 40px 15px;
+  }
+
+  .аchievements__legend {
+    position: relative;
+    top: 0;
+  }
+
+  .аchievements__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  .аchievements__checkbox {
+    left: 16px;
+    top: -8px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .аchievements {
+    padding: 56px 18px 55px 41px;
+  }
+
+  .аchievements__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-direction: column;
+    height: 110px;
+  }
+
+  .аchievements__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:nth-child(even)) {
+      margin-bottom: 63px;
+    }
+  }
+}
