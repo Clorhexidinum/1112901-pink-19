@@ -1,0 +1,46 @@
+.slider {
+  margin: 11px auto 0;
+  width: 61px;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__btn {
+  background-color: $slider-grey;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0;
+
+  &--feedback {
+    border: 3px solid $white;
+  }
+
+  &--price {
+    border: 3px solid $grey;
+  }
+
+  &--active {
+    border: 3px solid $black;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $dk_grey;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider {
+    display: none;
+  }
+}

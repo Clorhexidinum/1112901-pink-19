@@ -6,11 +6,13 @@ $white: #ffffff;
 $grey: #f2f2f2;
 $l_grey: #e5e5e5;
 $dk_grey: #7e868f;
+$slider-grey: #bec2c7;
+$icon_disable: #b5b9be;
 $black: #000000;
 $green: #2aab6d;
 $dk-green: #1c9b5e;
 $text-active: rgba(255, 255, 255, 0.5);
-$transparent-nav: rgba(40, 54, 69, 0.5);
+$transparent-nav: rgba(36, 69, 104, 0.3);
 $transparent: rgba(0, 0, 0, 0);
 
 
@@ -37,13 +39,13 @@ $lh_50: 50px;
 
 /* Font-weight */
 
-$light: 300;
-$regular: 400;
+$light: 400;
+$regular: 500;
 $bold: 700;
 
 /* Resolution */
 
 $tablet: 640px;
-$decktop: 1200px;
+$desktop: 1200px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

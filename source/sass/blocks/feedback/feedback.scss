@@ -1,0 +1,157 @@
+.feedback {
+  list-style: none;
+}
+
+.feedback__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.feedback__item {
+  &--two {
+    display: none;
+  }
+
+  &--three {
+    display: none;
+  }
+}
+
+.feedback__container {
+  padding: 25px 20px 23px;
+  margin-bottom: 5px;
+}
+
+.feedback__content {
+  margin: 0;
+}
+
+.feedback__author-name {
+  color: $black;
+  font-size: $biger_txt;
+  font-weight: $bold;
+  line-height: $biger_lh;
+  margin-bottom: 13px;
+}
+
+.feedback__author-profession {
+  display: none;
+}
+
+.feedback__text {
+  margin: 0;
+  color: $blue;
+  font-size: $med_txt;
+  font-weight: $light;
+  line-height: $biger_lh;
+}
+
+@media (min-width: $tablet) {
+  .feedback__content {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .feedback__author-name {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 4px;
+    line-height: $biger_lh;
+  }
+
+  .feedback__author-profession {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $med_txt;
+    line-height: $biger_lh;
+    font-weight: $regular;
+  }
+
+  .feedback__text {
+    order: -1;
+    margin: 0 auto;
+    max-width: 915px;
+    font-size: $biger_txt;
+    font-weight: $regular;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feedback__wrapper {
+    position: relative;
+    padding: 160px 185px 13px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: calc(50% - 37px);
+      width: 80px;
+      height: 65px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .feedback__list {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 53px;
+      left: -55px;
+      width: 30px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 53px;
+      right: -63px;
+      width: 30px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+
+  .feedback__container {
+    padding: 26px 20px 21px;
+  }
+
+  .feedback__author-name {
+    font-size: $big_txt;
+    margin-bottom: 3px;
+  }
+
+  .feedback__author-profession {
+    font-size: $biger_txt;
+  }
+
+  .feedback__text {
+    font-size: $biger_txt;
+    margin-bottom: 37px;
+  }
+}

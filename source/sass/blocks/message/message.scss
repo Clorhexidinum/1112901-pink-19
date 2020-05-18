@@ -1,0 +1,62 @@
+.message {
+  border: 0;
+  position: relative;
+  padding: 19px 16px 20px;
+}
+
+.message__label {
+  color: $pink;
+  font-weight: $regular;
+  font-size: $med_txt;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 36px 20px 0;
+}
+
+.message__field {
+  color: $blue;
+  font-weight: $regular;
+  font-size: $biger_txt;
+  line-height: $biger_lh;
+  padding: 15px 20px;
+  border: 2px solid $grey;
+  outline: 0;
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet) {
+  .message {
+    padding: 36px 56px 48px;
+    border: 2px solid $grey;
+    background-color: $white;
+  }
+
+  .message__label {
+    padding: 0 38px;
+  }
+
+  .message__field {
+    min-height: 193px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .message {
+    padding: 35px 55px 41px;
+  }
+
+  .message__field {
+    min-height: 128px;
+  }
+}

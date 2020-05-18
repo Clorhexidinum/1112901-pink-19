@@ -2,40 +2,41 @@
 @import "variables.scss";
 
 /* Global */
-@import "global/body.scss";
-@import "global/visually-hidden.scss";
-@import "global/fonts.scss";
+@import "blocks/body/body.scss";
+@import "blocks/visually-hidden/visually-hidden.scss";
+@import "blocks/fonts/fonts.scss";
 
 /* General */
-@import "general/nav.scss";
-@import "general/footer.scss";
-@import "general/banner.scss";
-@import "general/social.scss";
+@import "blocks/nav/nav.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/banner/banner.scss";
+@import "blocks/social/social.scss";
+@import "blocks/page-header/page-header.scss";
+@import "blocks/offer/offer.scss";
 
 /* Index */
-@import "index/app.scss";
-@import "index/advantages.scss";
-@import "index/feedback.scss";
-@import "index/slider.scss";
-@import "index/price.scss";
-@import "index/contacts.scss";
-@import "index/map.scss";
+@import "blocks/app/app.scss";
+@import "blocks/advantages/advantages.scss";
+@import "blocks/feedback/feedback.scss";
+@import "blocks/slider/slider.scss";
+@import "blocks/price/price.scss";
+@import "blocks/contacts/contacts.scss";
+@import "blocks/map/map.scss";
 
 
 /* Photo */
-@import "photo/gallery.scss";
-@import "photo/post.scss";
-@import "photo/post-upload.scss";
-@import "photo/panorama.scss";
-@import "photo/label.scss";
+@import "blocks/gallery/gallery.scss";
+@import "blocks/post/post.scss";
+@import "blocks/post-upload/post-upload.scss";
+@import "blocks/panorama/panorama.scss";
+@import "blocks/label/label.scss";
 
 /* Form */
-@import "form/full-name.scss";
-@import "form/аchievements.scss";
-@import "form/contact.scss";
-@import "form/system.scss";
-@import "form/message.scss";
-@import "form/button.scss";
-@import "form/popup.scss";
-@import "form/application-form.scss";
-@import "form/offer.scss";
+@import "blocks/full-name/full-name.scss";
+@import "blocks/аchievements/аchievements.scss";
+@import "blocks/contact/contact.scss";
+@import "blocks/system/system.scss";
+@import "blocks/message/message.scss";
+@import "blocks/button/button.scss";
+@import "blocks/popup/popup.scss";
+@import "blocks/application-form/application-form.scss";

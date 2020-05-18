@@ -1,0 +1,159 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+
+  &--index {
+    display: none;
+  }
+}
+
+.footer__logo {
+  text-align: center;
+  cursor: pointer;
+
+  &:hover .footer__logo-img--title {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:active .footer__logo-img--title {
+    fill: $blue;
+  }
+}
+
+.footer__logo-img {
+  fill: $blue;
+  margin: 0 auto;
+
+  &--mob {
+    display: block;
+  }
+
+  &--des {
+    display: none;
+  }
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+
+.footer__social {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.footer__made-in-paragraph {
+  padding-top: 7px;
+  font-size: $med_txt;
+  line-height: $small_lh;
+  font-weight: $light;
+  color: $blue;
+  padding-right: 10px;
+}
+
+.footer__made-in-logo {
+  fill: $pink;
+  outline: 0;
+  margin-bottom: -19px;
+  width: 28px;
+  height: 40px;
+  position: relative;
+  top: -2px;
+  right: -12px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    padding-top: 0;
+
+    &--index {
+      display: flex;
+    }
+  }
+
+  .footer__logo {
+    margin: 0;
+    width: auto;
+  }
+
+  .footer__wrapper {
+    margin: 0 20px;
+    margin-bottom: 30px;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__social {
+    margin: 0;
+    padding-top: 1px;
+  }
+
+  .footer__made-in {
+    margin: 0;
+  }
+
+  .footer__made-in-paragraph {
+    padding-top: 0;
+    padding-right: 13px;
+  }
+
+  .footer__made-in-logo {
+    right: -14px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    padding: 34px 110px 30px;
+  }
+
+  .footer__social {
+    padding-top: 6px;
+    margin-left: 12px;
+  }
+
+  .footer__logo-img {
+    &--mob {
+      display: none;
+    }
+
+    &--des {
+      display: block;
+    }
+  }
+
+  .footer__made-in-paragraph {
+    margin: 12px -1px 0 0;
+    font-size: $biger_txt;
+  }
+
+  .footer__made-in-logo {
+    margin-bottom: -19px;
+    height: 42px;
+    top: 1px;
+    right: -12px;
+  }
+}
