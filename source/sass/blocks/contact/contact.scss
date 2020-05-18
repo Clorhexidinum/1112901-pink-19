@@ -56,12 +56,13 @@
 
 @media (min-width: $tablet) {
   .contact {
+    display: block;
     padding: 37px 58px 18px;
     border: 2px solid #f2f2f2;
   }
 
   .contact__header {
-    display: inline;
+    display: block;
     color: $pink;
     font-size: $med_txt;
     line-height: $small_lh;
@@ -69,6 +70,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 0 31px;
+    margin: 0 auto;
   }
 
   .contact__item {

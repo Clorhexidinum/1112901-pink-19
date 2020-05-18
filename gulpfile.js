@@ -99,11 +99,6 @@ gulp.task("html", function() {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(rename(function (path) {
-      path.basename += ".min";
-      path.extname = ".html";
-    }))
     .pipe(gulp.dest("build"));
 });
 

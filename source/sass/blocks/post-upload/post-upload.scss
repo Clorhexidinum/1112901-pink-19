@@ -317,8 +317,8 @@
       left: 247px;
     }
 
-    &--contrast {
-      top: 160px;
+    &--contrast::after {
+      left: 160px;
     }
   }
 
