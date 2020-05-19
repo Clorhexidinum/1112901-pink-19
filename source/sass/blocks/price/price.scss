@@ -1,8 +1,11 @@
 .price__container {
-  padding-top: 133px;
+  padding-top: 91px;
   background-color: $grey;
-  clip-path: polygon(0 13%, 100% 8%, 100% 100%, 0% 100%);
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 .price__list {
@@ -118,8 +121,7 @@
   }
 
   .price__container {
-    padding: 108px 20px 70px;
-    clip-path: polygon(0 18%, 100% 6%, 100% 100%, 0% 100%);
+    padding: 88px 20px 70px;
   }
 
   .price__value {
@@ -188,7 +190,6 @@
 @media (min-width: $desktop) {
   .price__container {
     padding: 150px 130px 97px;
-    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
   }
 
   .price__list {

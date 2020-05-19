@@ -10,8 +10,7 @@
   font-size: $big_txt;
   font-weight: $light;
   line-height: $biger_lh;
-  padding: 15px 20px 46px;
-  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 96%);
+  padding: 15px 20px 7px;
 }
 
 .advantages__offer {
@@ -20,10 +19,13 @@
 
 .advantages__list {
   list-style: none;
-  padding: 22px 30px;
+  padding: 62px 30px 0;
   padding-bottom: 0;
   margin: 0;
   margin-bottom: -14px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .advantages__item {
@@ -71,8 +73,7 @@
   .advantages__container {
     font-size: $fs-40px;
     padding-top: 58px;
-    padding-bottom: 96px;
-    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    padding-bottom: 45px;
   }
 
   .advantages__offer {
@@ -91,11 +92,10 @@
   }
 
   .advantages__list {
-    min-height: 328px;
+    min-height: 450px;
+    box-sizing: border-box;
     min-width: 43%;
-    padding: 7px 20px;
-    padding-left: 330px;
-    padding-bottom: 41px;
+    padding: 58px 23px 41px 330px;
     text-align: left;
     position: relative;
   }
@@ -195,8 +195,7 @@
 @media (min-width: $desktop) {
   .advantages__container {
     padding-top: 81px;
-    padding-bottom: 157px;
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+    padding-bottom: 62px;
   }
 
   .advantages__offer {
@@ -212,14 +211,14 @@
   .advantages__list {
     display: flex;
     justify-content: space-between;
-    padding: 230px 165px 0;
+    padding: 325px 163px 95px;
   }
 
   .advantages__item {
     margin: 0;
     flex-direction: column;
     text-align: center;
-    width: 230px;
+    width: 235px;
     position: relative;
   }
 
@@ -229,7 +228,7 @@
     order: initial;
     position: absolute;
     top: -368px;
-    left: -29px;
+    left: -23px;
 
     &--one {
       display: block;
@@ -246,11 +245,13 @@
     font-weight: $bold;
     line-height: $biger_lh;
     margin-bottom: 26px;
+    order: -1;
   }
 
   .advantages__item-description {
     font-size: $biger_txt;
     line-height: $biger_lh;
+    order: 2;
   }
 
   .advantages__effect {

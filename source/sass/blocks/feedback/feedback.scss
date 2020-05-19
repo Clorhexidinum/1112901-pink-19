@@ -2,6 +2,10 @@
   list-style: none;
 }
 
+.feedback__wrapper {
+  padding-bottom: 43px;
+}
+
 .feedback__list {
   padding: 0;
   margin: 0;
@@ -49,6 +53,10 @@
 }
 
 @media (min-width: $tablet) {
+  .feedback__wrapper {
+    padding-bottom: 19px;
+  }
+
   .feedback__content {
     flex-direction: column;
     display: flex;
