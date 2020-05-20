@@ -47,7 +47,7 @@ gulp.task("server", function () {
     open: true,
     cors: true,
     ui: false,
-    index: "index.min.html"
+    index: "index.html"
   });
 
   gulp.watch("source/sass/*/.scss", gulp.series("css"));
