@@ -4,6 +4,9 @@ var menu = document.querySelector('.nav__list');
 var navMain = document.querySelector('.nav__menu');
 
 menu.classList.remove('nav__list--nojs');
+navBtn.classList.remove('nav__container--nojs');
+navMain.classList.remove('nav__menu--nojs');
+
 
 navBtn.addEventListener('click', function() {
   if (navToggle.classList.contains('nav__toggle--closed')) {

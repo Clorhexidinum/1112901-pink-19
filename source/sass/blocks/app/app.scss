@@ -10,17 +10,18 @@
 }
 
 .app__button {
+  display: inline-block;
   color: $white;
   font-size: $biger_txt;
   line-height: $small_lh;
   font-weight: $bold;
   background-color: $transparent;
-  padding: 16px 30px;
+  padding: 16px 37px;
   border: 2px solid $white;
   border-radius: 30px;
   cursor: pointer;
   outline: 0;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   margin-bottom: 18px;
 
   &:hover,
@@ -30,8 +31,7 @@
   }
 
   &:active {
-    color: $pink;
-    opacity: 0.3;
+    color: #f1becc;
   }
 }
 
@@ -104,7 +104,7 @@
   }
 
   .app__button {
-    padding: 17px 42px;
+    padding: 17px 47px;
     margin-bottom: 28px;
     margin-left: -10px;
   }
@@ -128,7 +128,7 @@
   }
 
   .app__button {
-    padding: 16px 30px;
+    padding: 16px 33px;
     margin-bottom: 52px;
     font-size: 20px;
     margin-left: -5px;
