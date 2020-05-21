@@ -62,6 +62,7 @@
   line-height: $med_lh;
   font-weight: $light;
   margin: 0;
+  color: $blue;
 }
 
 .advantages__effect {
@@ -141,7 +142,7 @@
     border-radius: 50%;
     position: absolute;
     padding: 8px 32px 18px;
-    bottom: 92px;
+    top: 111px;
     left: 39px;
     z-index: 2;
   }
@@ -169,9 +170,9 @@
   .advantages__effect-description {
     font-size: $med_txt;
     line-height: $med_lh;
-    font-weight: $bold;
+    font-weight: $regular;
+    color: $blue;
     margin: 0;
-    letter-spacing: -1.2px;
   }
 
   .advantages__effect-link {
@@ -276,7 +277,7 @@
   .advantages__time {
     border: 16px solid $pink;
     padding: 29px 41px 43px;
-    bottom: 89px;
+    top: 54px;
     left: 153px;
     font-size: 121px;
 

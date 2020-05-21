@@ -24,6 +24,10 @@
   padding: 18px;
   background-color: $transparent-nav;
 
+  &--nojs {
+    background-color: $blue;
+  }
+
   &--show {
     position: relative;
     padding: 20px 19px 25px;
@@ -63,6 +67,10 @@
   height: 25px;
   cursor: pointer;
   position: relative;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .nav__container:hover .nav__toggle {
@@ -178,7 +186,6 @@
   }
 
   &:active {
-    color: $pink;
     opacity: 0.5;
   }
 }
