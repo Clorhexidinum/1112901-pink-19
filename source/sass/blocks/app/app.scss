@@ -16,12 +16,11 @@
   line-height: $small_lh;
   font-weight: $bold;
   background-color: $transparent;
-  padding: 16px 37px;
+  padding: 16px 36px;
   border: 2px solid $white;
   border-radius: 30px;
   cursor: pointer;
   outline: 0;
-  letter-spacing: 0.8px;
   margin-bottom: 18px;
 
   &:hover,
@@ -128,7 +127,7 @@
   }
 
   .app__button {
-    padding: 16px 33px;
+    padding: 16px 35px;
     margin-bottom: 52px;
     font-size: 20px;
     margin-left: -5px;

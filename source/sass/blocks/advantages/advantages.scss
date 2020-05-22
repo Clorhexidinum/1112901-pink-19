@@ -60,7 +60,7 @@
 .advantages__item-description {
   font-size: $med_txt;
   line-height: $med_lh;
-  font-weight: $light;
+  font-weight: $regular;
   margin: 0;
   color: $blue;
 }
@@ -173,6 +173,7 @@
     font-weight: $regular;
     color: $blue;
     margin: 0;
+    width: 300px;
   }
 
   .advantages__effect-link {
@@ -181,8 +182,7 @@
     font-weight: $regular;
     color: $pink;
     display: inline-block;
-    margin-top: 11px;
-    letter-spacing: -0.6px;
+    margin-top: 10px;
 
     &:hover,
     &:focus {
@@ -214,7 +214,7 @@
   .advantages__list {
     display: flex;
     justify-content: space-between;
-    padding: 325px 163px 95px;
+    padding: 324px 163px 66px;
   }
 
   .advantages__item {
@@ -298,11 +298,16 @@
     max-width: 350px;
   }
 
+  .advantages__effect-span {
+    padding-left: 8px;
+  }
+
   .advantages__effect-description {
     font-size: $biger_txt;
     line-height: $biger_lh;
     max-width: 540px;
     margin-bottom: 24px;
+    width: auto;
   }
 
   .advantages__effect-link {
