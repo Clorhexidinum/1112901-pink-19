@@ -186,7 +186,8 @@
   }
 
   &:active {
-    opacity: 0.5;
+    color: $white;
+    opacity: 0.3;
   }
 }
 
@@ -295,9 +296,15 @@
       border-bottom: 2px solid $white;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       padding-bottom: 7px;
       border-bottom: 2px solid $pink;
+    }
+
+    &:active {
+      border-bottom: 2px solid $white;
+      opacity: 0.3;
     }
   }
 }
